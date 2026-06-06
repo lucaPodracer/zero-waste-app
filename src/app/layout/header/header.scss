@@ -7,6 +7,10 @@ header {
     color: white;
 }
 
+logo {
+    justify-content: left;
+}
+
 nav {
     display: flex;
     gap: 1rem;
@@ -14,4 +18,8 @@ nav {
 
 a {
     color: white;
+}
+
+.icon {
+    font-size: 40px;
 }

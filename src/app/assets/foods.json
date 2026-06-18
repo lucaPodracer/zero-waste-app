@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Apfel",
+        "category": "Obst",
+        "seasonMonths": [
+            9,
+            10,
+            11
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 14
+    }
+]

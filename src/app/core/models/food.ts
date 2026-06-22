@@ -2,7 +2,7 @@ export interface Food {
     id: number;
     name: string;
     category: FoodCategory;
-    seasonMonths: number[];
+    seasonMonths: number[]; //Januar = 0 
 
     storage?: string;
     averageShelfLifeDays?: number;

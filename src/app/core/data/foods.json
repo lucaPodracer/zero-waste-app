@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Apfel",
+        "category": "Obst",
+        "seasonMonths": [
+            9,
+            10,
+            11
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 14,
+        "imageUrl": "assets/images/food/apple.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Brokkoli",
+        "category": "Gemüse",
+        "seasonMonths": [
+            8,
+            9,
+            10,
+            11
+        ],
+        "averageShelfLifeDays": 10
+    }
+]

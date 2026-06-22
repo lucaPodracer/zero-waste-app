@@ -1,14 +1,13 @@
 [
-    {
-        "id": 1,
-        "name": "Apfel",
-        "category": "Obst",
-        "seasonMonths": [
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 14
-    }
+  {
+    "id": 1,
+    "name": "Apfel",
+    "category": "Obst",
+    "seasonMonths": [9, 10, 11],
+    "previewText": "Frisch, knackig und voller Geschmack – Der Klassiker hat gerade wieder Saison. Äpfel liefern wertvolle Vitamine, sind lecker, gesund und der perfekte Snack für zwischendurch.",
+
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 14,
+    "imageUrl": "./assets/images/foods/Apfel.jpg"
+  }
 ]

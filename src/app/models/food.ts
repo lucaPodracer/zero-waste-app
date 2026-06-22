@@ -1,12 +1,13 @@
 export interface Food {
-    id: number;
-    name: string;
-    category: FoodCategory;
-    seasonMonths: number[];
+  id: number;
+  name: string;
+  category: FoodCategory;
+  seasonMonths: number[];   //Saison-Monate, beginnend mit 0 für Januar
+  previewText: string;
 
-    storage?: string;
-    averageShelfLifeDays?: number;
-    imageUrl?: string;
+  storage?: string;
+  averageShelfLifeDays?: number;
+  imageUrl?: string;
 }
 
 export type FoodCategory =

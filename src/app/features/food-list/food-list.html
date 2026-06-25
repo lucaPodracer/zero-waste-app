@@ -1,1 +1,20 @@
-<p>food-list works!</p>
+<div class="food-grid">
+
+    <div class="food-card" *ngFor="let food of foods">
+
+        <div class="food-image">
+            <img [src]="food.imageUrl || 'assets/images/food/placeholder.png'" [alt]="food.name">
+        </div>
+
+        <div class="food-content">
+
+            <h2>{{ food.name }}</h2>
+            <p><strong>Kategorie: </strong> {{ food.category }}</p>
+            <p><strong>Saison: </strong> {{ food.seasonMonths.join(', ') }} </p>
+            <p *ngIf="food.storage"> <strong>Lagerung: </strong> {{ food.storage }}</p>
+            <p *ngIf="food.averageShelfLifeDays"> <strong>Durchschnittliche Lagerdauer: </strong> {{ food.averageShelfLifeDays}} </p>
+        </div>
+
+    </div>
+
+</div>

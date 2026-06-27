@@ -1,29 +1,202 @@
-.wrapper{
-    display:flex;
-    justify-content: space-around;
-    width: 636px;
-    padding: 10px 0;
-    font-size: 2.5em;
-    font-weight: bold;
+:host {
+  --bg: #faf8f3;
+  --card-bg: #ffffff;
+  --border: #e8e4da;
+  --text: #2b2b2b;
+  --muted: #6b6b6b;
+  --green: #4caf6e;
+  --accent: #f2a93b;
+  display: block;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 24px;
 }
 
-.table{
-    border-spacing: 0;
-    border-collapse: collapse;
-    border: 2px solid black;
-    font-size: 2em;
-    background: linear-gradient(white, lightgreen 60);
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
 }
 
-.td{
-    border: 1px solid black;
+.icon-small {
+  font-size: 18px;
+}
+
+.calendar {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+  .title {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+
+    .leaf {
+      font-size: 28px;
+      color: var(--green);
+    }
+    h1 { margin: 0; font-size: 1.6rem; }
+    p { margin: 2px 0 0; color: var(--muted); }
+  }
+
+  .nav {
+    display: flex;
+    gap: 8px;
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 8px 14px;
+      cursor: pointer;
+      font-size: 0.95rem;
+
+      &:hover { background: #f1f1f1; }
+    }
+    .arrow { width: 38px; justify-content: center; padding: 8px 0; }
+  }
+}
+
+.season-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--card-bg);
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: border-color 0.15s, box-shadow 0.15s;
+
+    .card-icon { font-size: 24px; }
+    .card-name { font-weight: 700; margin-top: 4px; }
+    .card-range { color: var(--muted); font-size: 0.85rem; }
+
+    &.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(242, 169, 59, 0.25);
+    }
+
+    &:hover { border-color: #c9c3b5; }
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 20px;
+  align-items: start;
+}
+
+.season-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+
+  th, td {
+    border: 1px solid var(--border);
+    padding: 10px;
+    vertical-align: top;
+  }
+
+  thead th {
+    background: #fbf1da;
     text-align: center;
-    vertical-align: middle;
-    width: 90px;
-    height: 90px;
+    font-weight: 700;
+  }
+
+  .corner { background: var(--card-bg); }
+
+  .category-label {
+    text-align: left;
+    white-space: nowrap;
+    background: #fafafa;
+    font-weight: 600;
+
+    .category-icon { margin-right: 6px; }
+  }
+
+  .item {
+    padding: 4px 0;
+    font-size: 0.9rem;
+  }
 }
 
-.tr:first-child{
-    background: green;
-    color: white;
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .filter-panel, .info-box {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+  }
+
+  .filter-panel {
+    h2 { margin: 0 0 10px; font-size: 1rem; }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 0;
+      cursor: pointer;
+      font-size: 0.92rem;
+    }
+  }
+
+  .info-box {
+    background: #eef7ee;
+    border-color: #d3ecd3;
+
+    h3 {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin: 0 0 6px;
+      font-size: 0.95rem;
+    }
+    p { margin: 0; color: var(--muted); font-size: 0.88rem; }
+  }
+}
+
+.notice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #f3f3f3;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.error { color: #c0392b; }
+
+@media (max-width: 900px) {
+  .season-cards { grid-template-columns: repeat(2, 1fr); }
+  .content { grid-template-columns: 1fr; }
 }

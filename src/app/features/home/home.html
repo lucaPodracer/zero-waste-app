@@ -1,23 +1,75 @@
-<h1>Willkommen!</h1>
-<p>
-  Erster Paragraf. Hier steht später ein kurzer Willkommens-Text und eine kurze Beschreibung der
-  Website, inkl. kurzer Anleitung für den User.
-</p>
+<body class="home">
+  <div class="home-main">
+    <article class="welcome">
+      <h1 class="welcome-header">Herzlich Willkommen</h1>
+      <p class="welcome-text">
+        Willkommen auf deiner Plattform für bewussten Lebensmittelkonsum. Hier erfährst du auf einen
+        Blick, welche Lebensmittel aktuell Saison haben und kannst deine Einkäufe ganz einfach in
+        einer digitalen Vorratsliste verwalten. So behältst du nicht nur den Überblick über deine
+        Vorräte, sondern auch über Haltbarkeitsdaten – und kannst rechtzeitig nutzen, was bereits
+        vorhanden ist. Unser Ziel ist es, dich dabei zu unterstützen, Lebensmittelverschwendung
+        nachhaltig zu reduzieren. Mit saisonalen Empfehlungen und smarter Organisation wird es
+        einfacher, bewusster einzukaufen, effizienter zu planen und wertvolle Ressourcen zu schonen.
+        Mach den nächsten Schritt zu einem nachhaltigeren Alltag – ganz ohne großen Aufwand.
+      </p>
+    </article>
 
-<hr>
+    <article class="motivation">
+      <h1 class="motivation-header">Warum saisonale Lebensmittel?</h1>
+      <p class="motivation-text">
+        Saisonale Lebensmittel bewusst zu wählen bedeutet mehr als nur frische Zutaten einzukaufen –
+        es ist ein aktiver Beitrag zu einem nachhaltigeren Umgang mit unseren Ressourcen. Obst und
+        Gemüse, das gerade Saison hat, wird in der Regel regional angebaut, benötigt weniger
+        Transport- und Lageraufwand und bleibt länger frisch. Das wirkt sich nicht nur positiv auf
+        Geschmack und Nährstoffgehalt aus, sondern hilft auch dabei, Lebensmittelabfälle zu
+        reduzieren. Denn frische, saisonale Produkte verderben weniger schnell und lassen sich
+        besser in den Alltag integrieren. Wer saisonal einkauft, plant automatisch bewusster:
+        Man orientiert sich an dem, was verfügbar ist, statt an spontanen, oft überflüssigen Käufen.
+        Dadurch sinkt die Wahrscheinlichkeit, dass Lebensmittel ungenutzt im Vorrat landen und
+        schließlich entsorgt werden müssen. Mit der Entscheidung für saisonale und regionale
+        Produkte unterstützt du nicht nur die Umwelt, sondern entwickelst auch ein nachhaltigeres
+        Konsumverhalten – einfach, effektiv und ohne Verzicht.
+      </p>
+    </article>
 
-<h1>Motivation für saisonale Lebensmittel</h1>
-<p>
-  Zweiter Paragraf. Hier wird kurz darauf eingegangen, warum es sinnvoll ist, auf saisonale
-  Produkte zurückzugreifen und welche Vorteile dies im Hinblick auf Nachhaltigkeit hat.
-</p>
+    <!-- TODO: Vorschau aktuell saisonaler Lebensmittel implementieren -->
+    <div class="seasonal-food-preview">
+      <h1>Was hat gerade Saison?</h1>
+      <div class="food-preview-card-section">
+        Dritter Abschnitt. Hier wird eine kleine Auswahl bzw. Vorschau aktuell saisonaler Lebensmittel
+        inkl. Bild und kurzem Text / Details angezeigt. Ggf. inkl. Verlinkung auf Food-List etc.
+      </div>
+    </div>
+  </div>
 
-<hr>
 
-<h1>Auswahl aktuell saisonaler Lebensmittel</h1>
-<p>
-  Dritter Paragraf. Hier wird eine kleine Auswahl bzw. Vorschau aktuell saisonaler Lebensmittel
-  inkl. Bild und kurzem Text / Details angezeigt. Ggf. inkl. Verlinkung auf Food-List etc.
-</p>
+  <div class="pantry-preview">
+    <header class="pantry-header">
+      <h1 class="pantry-preview-header">Meine Vorräte:</h1>
+      <p class="pantry-preview-text">
+        Diese Lebensmittel in deiner Vorratskammer sollten bald verwertet werden, da sie demnächst ablaufen:
+      </p>
+    </header>
 
-<!-- TODO: Die einzelnen Lebensmittel als Component hinzufügen (horizontal) - siehe food-preview-card -->
+    <!-- TODO: Vorratsliste laden und bald ablaufende Lebensmittel filtern. Einzelne Elemente in der Liste als Component? -->
+    <div class="pantry-preview-list">
+      <ul>
+        <li>Lebensmittel 1</li>
+        <li>Lebensmittel 2</li>
+        <li>Lebensmittel 3</li>
+        <li>Lebensmittel 4</li>
+      </ul>
+    </div>
+
+    <div class="pantry-preview-buttons">
+      <!-- TODO: Button-Funktion implementieren (Einkäufe / Lebensmittel zur Vorratskammer hinzufügen) -->
+      <button class="add-purchases-button">
+        <span class="material-symbols-outlined">add_notes</span>
+      </button>
+      <!-- TODO: Button-Funktion implementieren (Navigation zur Vorratskammer) -->
+      <button class="pantry-list-button">
+        <span class="material-symbols-outlined">list</span>
+      </button>
+    </div>
+  </div>
+</body>

@@ -4,17 +4,281 @@
         "name": "Apfel",
         "category": "Obst",
         "seasonMonths": [
+            8,
             9,
             10,
             11
         ],
         "storage": "Kühlschrank",
-        "averageShelfLifeDays": 14,
+        "averageShelfLifeDays": 28,
         "imageUrl": "assets/images/food/apple.jpg"
     },
     {
         "id": 2,
+        "name": "Birne",
+        "category": "Obst",
+        "seasonMonths": [
+            8,
+            9,
+            10
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 14
+    },
+    {
+        "id": 3,
+        "name": "Erdbeere",
+        "category": "Obst",
+        "seasonMonths": [
+            4,
+            5,
+            6
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 3
+    },
+    {
+        "id": 4,
+        "name": "Himbeere",
+        "category": "Obst",
+        "seasonMonths": [
+            5,
+            6,
+            7
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 3
+    },
+    {
+        "id": 5,
+        "name": "Heidelbeere",
+        "category": "Obst",
+        "seasonMonths": [
+            5,
+            6,
+            7
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 6,
+        "name": "Kirsche",
+        "category": "Obst",
+        "seasonMonths": [
+            5,
+            6,
+            7
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 4
+    },
+    {
+        "id": 7,
+        "name": "Pflaume",
+        "category": "Obst",
+        "seasonMonths": [
+            7,
+            8,
+            9
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 8,
+        "name": "Traube",
+        "category": "Obst",
+        "seasonMonths": [
+            7,
+            8,
+            9
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 9,
+        "name": "Banane",
+        "category": "Obst",
+        "seasonMonths": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        "storage": "Zimmertemperatur",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 10,
+        "name": "Kiwi",
+        "category": "Obst",
+        "seasonMonths": [
+            0,
+            1,
+            2,
+            3,
+            10,
+            11
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 14
+    },
+    {
+        "id": 11,
         "name": "Brokkoli",
+        "category": "Gemüse",
+        "seasonMonths": [
+            7,
+            8,
+            9,
+            10
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 12,
+        "name": "Blumenkohl",
+        "category": "Gemüse",
+        "seasonMonths": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 13,
+        "name": "Karotte",
+        "category": "Gemüse",
+        "seasonMonths": [
+            0,
+            1,
+            2,
+            3,
+            8,
+            9,
+            10,
+            11
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 21
+    },
+    {
+        "id": 14,
+        "name": "Speisekartoffel",
+        "category": "Gemüse",
+        "seasonMonths": [
+            0,
+            1,
+            2,
+            3,
+            8,
+            9,
+            10,
+            11
+        ],
+        "storage": "Dunkel und kühl",
+        "averageShelfLifeDays": 60
+    },
+    {
+        "id": 15,
+        "name": "Rispentomate",
+        "category": "Gemüse",
+        "seasonMonths": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "storage": "Zimmertemperatur",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 16,
+        "name": "Cherrytomate",
+        "category": "Gemüse",
+        "seasonMonths": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "storage": "Zimmertemperatur",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 17,
+        "name": "Salatgurke",
+        "category": "Gemüse",
+        "seasonMonths": [
+            5,
+            6,
+            7,
+            8
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 18,
+        "name": "Paprika",
+        "category": "Gemüse",
+        "seasonMonths": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 10
+    },
+    {
+        "id": 19,
+        "name": "Zucchini",
+        "category": "Gemüse",
+        "seasonMonths": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 20,
+        "name": "Aubergine",
+        "category": "Gemüse",
+        "seasonMonths": [
+            6,
+            7,
+            8,
+            9
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 21,
+        "name": "Hokkaido-Kürbis",
         "category": "Gemüse",
         "seasonMonths": [
             8,
@@ -22,6 +286,739 @@
             10,
             11
         ],
+        "storage": "Kühl und trocken",
+        "averageShelfLifeDays": 60
+    },
+    {
+        "id": 22,
+        "name": "Lauch",
+        "category": "Gemüse",
+        "seasonMonths": [
+            0,
+            1,
+            2,
+            3,
+            9,
+            10,
+            11
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 14
+    },
+    {
+        "id": 23,
+        "name": "Fenchel",
+        "category": "Gemüse",
+        "seasonMonths": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 24,
+        "name": "Rote Bete",
+        "category": "Gemüse",
+        "seasonMonths": [
+            8,
+            9,
+            10,
+            11
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 21
+    },
+    {
+        "id": 25,
+        "name": "Radieschen",
+        "category": "Gemüse",
+        "seasonMonths": [
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 26,
+        "name": "Kopfsalat",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 27,
+        "name": "Eisbergsalat",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 28,
+        "name": "Feldsalat",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            9,
+            10,
+            11,
+            0,
+            1
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 4
+    },
+    {
+        "id": 29,
+        "name": "Rucola",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 4
+    },
+    {
+        "id": 30,
+        "name": "Basilikum",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            5,
+            6,
+            7,
+            8
+        ],
+        "storage": "Zimmertemperatur",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 31,
+        "name": "Petersilie",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 32,
+        "name": "Schnittlauch",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 33,
+        "name": "Champignon",
+        "category": "Gemüse",
+        "seasonMonths": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 34,
+        "name": "Grüner Spargel",
+        "category": "Gemüse",
+        "seasonMonths": [
+            3,
+            4,
+            5
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 4
+    },
+    {
+        "id": 35,
+        "name": "Zuckerschote",
+        "category": "Gemüse",
+        "seasonMonths": [
+            4,
+            5,
+            6
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 36,
+        "name": "Kohlrabi",
+        "category": "Gemüse",
+        "seasonMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 14
+    },
+    {
+        "id": 37,
+        "name": "Wirsing",
+        "category": "Gemüse",
+        "seasonMonths": [
+            8,
+            9,
+            10,
+            11,
+            0,
+            1
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 14
+    },
+    {
+        "id": 38,
+        "name": "Rosenkohl",
+        "category": "Gemüse",
+        "seasonMonths": [
+            9,
+            10,
+            11,
+            0,
+            1
+        ],
+        "storage": "Kühlschrank",
         "averageShelfLifeDays": 10
+    },
+    {
+        "id": 39,
+        "name": "Spitzkohl",
+        "category": "Gemüse",
+        "seasonMonths": [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 10
+    },
+    {
+        "id": 40,
+        "name": "Rotkohl",
+        "category": "Gemüse",
+        "seasonMonths": [
+            8,
+            9,
+            10,
+            11,
+            0
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 21
+    },
+    {
+        "id": 41,
+        "name": "Weißkohl",
+        "category": "Gemüse",
+        "seasonMonths": [
+            8,
+            9,
+            10,
+            11,
+            0
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 21
+    },
+    {
+        "id": 42,
+        "name": "Staudensellerie",
+        "category": "Gemüse",
+        "seasonMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 10
+    },
+    {
+        "id": 43,
+        "name": "Pastinake",
+        "category": "Gemüse",
+        "seasonMonths": [
+            9,
+            10,
+            11,
+            0,
+            1,
+            2
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 21
+    },
+    {
+        "id": 44,
+        "name": "Petersilienwurzel",
+        "category": "Gemüse",
+        "seasonMonths": [
+            9,
+            10,
+            11,
+            0,
+            1
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 21
+    },
+    {
+        "id": 45,
+        "name": "Schwarzwurzel",
+        "category": "Gemüse",
+        "seasonMonths": [
+            10,
+            11,
+            0,
+            1
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 14
+    },
+    {
+        "id": 46,
+        "name": "Mangold",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 4
+    },
+    {
+        "id": 47,
+        "name": "Pak Choi",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            3,
+            4,
+            5,
+            9,
+            10
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 48,
+        "name": "Chicorée",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            10,
+            11,
+            0,
+            1,
+            2
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 10
+    },
+    {
+        "id": 49,
+        "name": "Endiviensalat",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 50,
+        "name": "Kresse",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 3
+    },
+    {
+        "id": 51,
+        "name": "Rhabarber",
+        "category": "Obst",
+        "seasonMonths": [
+            3,
+            4,
+            5
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 52,
+        "name": "Pfirsich",
+        "category": "Obst",
+        "seasonMonths": [
+            5,
+            6,
+            7
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 53,
+        "name": "Nektarine",
+        "category": "Obst",
+        "seasonMonths": [
+            5,
+            6,
+            7
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 54,
+        "name": "Aprikose",
+        "category": "Obst",
+        "seasonMonths": [
+            5,
+            6,
+            7
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 55,
+        "name": "Mirabelle",
+        "category": "Obst",
+        "seasonMonths": [
+            7,
+            8
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 56,
+        "name": "Feige",
+        "category": "Obst",
+        "seasonMonths": [
+            7,
+            8,
+            9
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 3
+    },
+    {
+        "id": 57,
+        "name": "Granatapfel",
+        "category": "Obst",
+        "seasonMonths": [
+            9,
+            10,
+            11
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 30
+    },
+    {
+        "id": 58,
+        "name": "Mango",
+        "category": "Obst",
+        "seasonMonths": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        "storage": "Zimmertemperatur",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 59,
+        "name": "Honigmelone",
+        "category": "Obst",
+        "seasonMonths": [
+            5,
+            6,
+            7,
+            8
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 60,
+        "name": "Wassermelone",
+        "category": "Obst",
+        "seasonMonths": [
+            5,
+            6,
+            7,
+            8
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 61,
+        "name": "Ananas",
+        "category": "Obst",
+        "seasonMonths": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        "storage": "Zimmertemperatur",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 62,
+        "name": "Grapefruit",
+        "category": "Obst",
+        "seasonMonths": [
+            11,
+            0,
+            1,
+            2,
+            3
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 21
+    },
+    {
+        "id": 63,
+        "name": "Limette",
+        "category": "Obst",
+        "seasonMonths": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 21
+    },
+    {
+        "id": 64,
+        "name": "Austernpilz",
+        "category": "Gemüse",
+        "seasonMonths": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 65,
+        "name": "Schnittlauch",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 66,
+        "name": "Dill",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 67,
+        "name": "Koriander",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 5
+    },
+    {
+        "id": 68,
+        "name": "Minze",
+        "category": "Salat & Kräuter",
+        "seasonMonths": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 7
+    },
+    {
+        "id": 69,
+        "name": "Ingwer",
+        "category": "Gemüse",
+        "seasonMonths": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 30
+    },
+    {
+        "id": 70,
+        "name": "Frischer Kurkuma",
+        "category": "Gemüse",
+        "seasonMonths": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        "storage": "Kühlschrank",
+        "averageShelfLifeDays": 21
     }
 ]

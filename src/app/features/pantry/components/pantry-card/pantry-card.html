@@ -1,0 +1,53 @@
+<div class="pantry-card">
+
+    <div class="pantry-image">
+        <img [src]="item.food.imageUrl || 'assets/images/food/placeholder.png'" [alt]="item.food.name">
+    </div>
+
+
+    <div class="pantry-content">
+
+        <h2>
+            {{ item.food.name }}
+        </h2>
+
+
+        <p>
+            <strong>Kategorie:</strong>
+            {{ item.food.category }}
+        </p>
+
+
+        <p>
+            <strong>Menge:</strong>
+            {{ item.quantity ?? '-' }}
+            {{ item.unit ?? '' }}
+        </p>
+
+
+        @if(item.expiryDate) {
+
+        <p>
+            <strong>Ablauf:</strong>
+            {{ item.expiryDate | date }}
+        </p>
+
+        }
+
+
+        <div class="quantity-controls">
+
+            <button (click)="changeQuantity(-1)">
+            -
+            </button>
+
+            <button (click)="changeQuantity(1)">
+            +
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

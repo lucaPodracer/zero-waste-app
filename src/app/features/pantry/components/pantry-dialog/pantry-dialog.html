@@ -1,0 +1,63 @@
+<h2>
+    Lebensmittel hinzufügen
+</h2>
+
+
+<div class="form">
+    <input placeholder="Lebensmittel" [(ngModel)]="searchText" (ngModelChange)="onSearch()">
+
+
+    @if(filteredFoods.length > 0) {
+
+    <div class="search-results">
+        @for(food of filteredFoods; track food.id) {
+        <button type="button" (click)="selectFood(food)">
+            {{ food.name }}
+        </button>
+        }
+    </div>
+    }
+
+
+    <input type="number" placeholder="Menge" [(ngModel)]="quantity">
+
+    <select [(ngModel)]="unit">
+        <option value="Stück">
+            Stück
+        </option>
+
+        <option value="g">
+            Gramm
+        </option>
+
+        <option value="kg">
+            Kilogramm
+        </option>
+
+        <option value="ml">
+            Milliliter
+        </option>
+
+        <option value="l">
+            Liter
+        </option>
+    </select>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Einlagerungsdatum</mat-label>
+        <input matInput [matDatepicker]="picker" [(ngModel)]="restockDate">
+        <mat-datepicker-toggle matIconSuffix [for]="picker">
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <div>
+        <button (click)="cancel()">
+            Abbrechen
+        </button>
+
+        <button (click)="save()">
+            Speichern
+        </button>
+    </div>
+</div>

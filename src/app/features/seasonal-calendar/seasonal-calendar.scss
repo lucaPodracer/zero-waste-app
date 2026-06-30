@@ -1,0 +1,29 @@
+.wrapper{
+    display:flex;
+    justify-content: space-around;
+    width: 636px;
+    padding: 10px 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 2px solid black;
+    font-size: 2em;
+    background: linear-gradient(white, lightgreen 60);
+}
+
+.td{
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    width: 90px;
+    height: 90px;
+}
+
+.tr:first-child{
+    background: green;
+    color: white;
+}

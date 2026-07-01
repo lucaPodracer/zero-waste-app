@@ -16,6 +16,7 @@
     "seasonMonths": [8, 9, 10],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 14,
+    "imageUrl": "assets/images/food/pear.jpg",
     "previewText": "Birnen haben jetzt Saison: saftig, mild und herrlich aromatisch – ein feiner Snack für jeden Tag."
   },
   {
@@ -35,6 +36,7 @@
     "seasonMonths": [5, 6, 7],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 3,
+    "imageUrl": "assets/images/food/raspberries.jpg",
     "previewText": "Himbeeren haben jetzt Saison: fein, fruchtig und ideal für einen leichten Genuss im Sommer."
   },
   {
@@ -44,6 +46,7 @@
     "seasonMonths": [5, 6, 7],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/blueberries.jpg",
     "previewText": "Heidelbeeren sind jetzt in Saison: klein, aromatisch und voller fruchtigem Geschmack."
   },
   {
@@ -63,6 +66,7 @@
     "seasonMonths": [7, 8, 9],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/plums.jpg",
     "previewText": "Pflaumen haben jetzt Saison: saftig, süß-säuerlich und wunderbar aromatisch."
   },
   {
@@ -72,6 +76,7 @@
     "seasonMonths": [7, 8, 9],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/grapes.jpg",
     "previewText": "Trauben sind jetzt saisonal besonders lecker: süß, frisch und perfekt zum Naschen."
   },
   {
@@ -81,6 +86,7 @@
     "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "storage": "Zimmertemperatur",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/bananas.jpg",
     "previewText": "Bananen sind das ganze Jahr verfügbar: praktisch, cremig und ideal als schneller Energiespender."
   },
   {
@@ -90,6 +96,7 @@
     "seasonMonths": [0, 1, 2, 3, 10, 11],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 14,
+    "imageUrl": "assets/images/food/kiwis.jpg",
     "previewText": "Kiwi hat jetzt Saison: frisch, fruchtig und angenehm exotisch im Geschmack."
   },
   {
@@ -99,6 +106,7 @@
     "seasonMonths": [7, 8, 9, 10],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/broccoli.jpg",
     "previewText": "Brokkoli ist jetzt in Saison: knackig, vielseitig und reich an wertvollen Nährstoffen."
   },
   {
@@ -138,6 +146,7 @@
     "seasonMonths": [5, 6, 7, 8, 9],
     "storage": "Zimmertemperatur",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/vine_tomatoes.jpg",
     "previewText": "Rispentomaten haben jetzt Saison: sonnig, aromatisch und perfekt für frische Gerichte."
   },
   {
@@ -147,6 +156,7 @@
     "seasonMonths": [5, 6, 7, 8, 9],
     "storage": "Zimmertemperatur",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/cherry_tomato.jpg",
     "previewText": "Cherrytomaten sind jetzt besonders aromatisch: klein, süß und ideal zum Snacken."
   },
   {
@@ -156,6 +166,7 @@
     "seasonMonths": [5, 6, 7, 8],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/cucumber.jpg",
     "previewText": "Salatgurken haben jetzt Saison: frisch, knackig und herrlich leicht."
   },
   {
@@ -165,6 +176,7 @@
     "seasonMonths": [5, 6, 7, 8, 9],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 10,
+    "imageUrl": "assets/images/food/bell_pepper.jpg",
     "previewText": "Paprika ist jetzt saisonal besonders lecker: bunt, knackig und voller Aroma."
   },
   {
@@ -174,6 +186,7 @@
     "seasonMonths": [5, 6, 7, 8, 9],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/zucchini.jpg",
     "previewText": "Zucchini haben jetzt Saison: mild, leicht und vielseitig in der Küche."
   },
   {
@@ -183,7 +196,8 @@
     "seasonMonths": [6, 7, 8, 9],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 7,
-    "previewText": "Auberginen sind jetzt in Saison: zart, würzig und ideal für mediterrane Gerichte."
+    "imageUrl": "assets/images/food/eggplant.jpg",
+    "previewText": "Auberginen sind jetzt saisonal: zart, würzig und ideal für mediterrane Gerichte."
   },
   {
     "id": 21,
@@ -228,6 +242,7 @@
     "seasonMonths": [3, 4, 5, 6, 7],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/radish.jpg",
     "previewText": "Radieschen sind jetzt in Saison: knackig, leicht scharf und perfekt für frische Salate."
   },
   {
@@ -246,6 +261,7 @@
     "seasonMonths": [4, 5, 6, 7, 8, 9],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/iceberg_salad.jpg",
     "previewText": "Eisbergsalat ist jetzt saisonal frisch: knackig, mild und besonders erfrischend."
   },
   {
@@ -264,6 +280,7 @@
     "seasonMonths": [3, 4, 5, 6, 7, 8],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 4,
+    "imageUrl": "assets/images/food/arugula.jpg",
     "previewText": "Rucola ist jetzt in Saison: würzig, frisch und ideal für aromatische Salate."
   },
   {
@@ -327,6 +344,7 @@
     "seasonMonths": [3, 4, 5, 6, 7, 8],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 14,
+    "imageUrl": "assets/images/food/kohlrabi.jpg",
     "previewText": "Kohlrabi hat jetzt Saison: frisch, mild und wunderbar knackig."
   },
   {
@@ -345,6 +363,7 @@
     "seasonMonths": [9, 10, 11, 0, 1],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 10,
+    "imageUrl": "assets/images/food/brussels_sprouts.jpg",
     "previewText": "Rosenkohl hat jetzt Saison: aromatisch, nussig und perfekt für die kalte Jahreszeit."
   },
   {
@@ -471,6 +490,7 @@
     "seasonMonths": [5, 6, 7],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/peaches.jpg",
     "previewText": "Pfirsiche haben jetzt Saison: saftig, süß und herrlich sommerlich."
   },
   {
@@ -480,6 +500,7 @@
     "seasonMonths": [5, 6, 7],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/nectarines.jpg",
     "previewText": "Nektarinen sind jetzt in Saison: aromatisch, saftig und angenehm süß."
   },
   {
@@ -489,6 +510,7 @@
     "seasonMonths": [5, 6, 7],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/apricots.jpg",
     "previewText": "Aprikosen haben jetzt Saison: fein süß, sonnig und perfekt für den Sommer."
   },
   {
@@ -507,6 +529,7 @@
     "seasonMonths": [7, 8, 9],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 3,
+    "imageUrl": "assets/images/food/figs.jpg",
     "previewText": "Feigen haben jetzt Saison: weich, süß und wunderbar aromatisch."
   },
   {
@@ -516,6 +539,7 @@
     "seasonMonths": [9, 10, 11],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 30,
+    "imageUrl": "assets/images/food/pomegranate.jpg",
     "previewText": "Granatäpfel sind jetzt in Saison: fruchtig, frisch und mit angenehm knackigen Kernen."
   },
   {

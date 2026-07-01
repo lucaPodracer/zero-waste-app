@@ -3,6 +3,7 @@
         "id": 1,
         "name": "Apfel",
         "category": "Obst",
+        "description": "Äpfel sind vielseitig und bei richtiger Lagerung lange haltbar.",
         "seasonMonths": [
             8,
             9,
@@ -11,7 +12,20 @@
         ],
         "storage": "Kühlschrank",
         "averageShelfLifeDays": 28,
-        "imageUrl": "assets/images/food/apple.jpg"
+        "imageUrl": "assets/images/food/apple.jpg",
+        "zeroWasteTips": [
+    "Schale mitessen – sie enthält viele Nährstoffe.",
+    "Angeschnittene Äpfel mit Zitronensaft beträufeln.",
+    "Überreife Äpfel zu Apfelmus oder Smoothies verarbeiten."
+  ],
+
+  "uses": [
+    "Apfelmus",
+    "Smoothie",
+    "Apfelkuchen",
+    "Getrocknete Apfelringe"
+  ]
+        
     },
     {
         "id": 2,
@@ -23,7 +37,19 @@
             10
         ],
         "storage": "Kühlschrank",
-        "averageShelfLifeDays": 14
+        "averageShelfLifeDays": 14,
+         "description": "Birnen sind saftig und süß. Sie eignen sich als Snack oder für Desserts.",
+        "uses": [
+    "Birnenkuchen",
+    "Obstsalat",
+    "Smoothie",
+    "Birnenkompott"
+                ],
+        "zeroWasteTips": [
+    "Reife Birnen zu Kompott verarbeiten.",
+    "Für Smoothies oder Marmelade verwenden.",
+    "Angeschnittene Birnen mit Zitronensaft beträufeln."
+                        ]
     },
     {
         "id": 3,
@@ -35,7 +61,19 @@
             6
         ],
         "storage": "Kühlschrank",
-        "averageShelfLifeDays": 3
+        "averageShelfLifeDays": 3,
+        "description": "Erdbeeren sind süß und besonders im Frühsommer beliebt.",
+        "uses": [
+    "Marmelade",
+    "Smoothie",
+    "Kuchen",
+    "Dessert"
+  ],
+  "zeroWasteTips": [
+    "Reife Erdbeeren einfrieren.",
+    "Zu Marmelade verarbeiten.",
+    "Beschädigte Stellen entfernen statt die ganze Frucht wegzuwerfen."
+  ]
     },
     {
         "id": 4,
@@ -47,7 +85,19 @@
             7
         ],
         "storage": "Kühlschrank",
-        "averageShelfLifeDays": 3
+        "averageShelfLifeDays": 3,
+        "description": "Himbeeren sind empfindlich und sollten schnell verbraucht werden.",
+  "uses": [
+    "Smoothie",
+    "Dessert",
+    "Marmelade",
+    "Joghurt"
+  ],
+  "zeroWasteTips": [
+    "Direkt nach dem Kauf verbrauchen.",
+    "Übrig gebliebene Himbeeren einfrieren.",
+    "Zu Fruchtsoße pürieren."
+  ]
     },
     {
         "id": 5,
@@ -59,7 +109,19 @@
             7
         ],
         "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
+        "averageShelfLifeDays": 7,
+         "description": "Heidelbeeren sind vitaminreich und vielseitig verwendbar.",
+  "uses": [
+    "Müsli",
+    "Smoothie",
+    "Muffins",
+    "Pfannkuchen"
+  ],
+  "zeroWasteTips": [
+    "Vor dem Verzehr waschen.",
+    "Überreife Beeren einfrieren.",
+    "Für Muffins oder Kuchen verwenden."
+  ]
     },
     {
         "id": 6,
@@ -71,7 +133,19 @@
             7
         ],
         "storage": "Kühlschrank",
-        "averageShelfLifeDays": 4
+        "averageShelfLifeDays": 4,
+        "description": "Kirschen schmecken frisch und eignen sich gut zum Backen.",
+  "uses": [
+    "Kirschkuchen",
+    "Marmelade",
+    "Dessert",
+    "Smoothie"
+  ],
+  "zeroWasteTips": [
+    "Überschüssige Kirschen einfrieren.",
+    "Zu Marmelade verarbeiten.",
+    "Kerne zum Basteln oder Wärmekissen nutzen."
+  ]
     },
     {
         "id": 7,
@@ -83,7 +157,19 @@
             9
         ],
         "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
+        "averageShelfLifeDays": 7,
+        "description": "Pflaumen eignen sich gut zum Backen und Einkochen.",
+  "uses": [
+    "Pflaumenkuchen",
+    "Mus",
+    "Marmelade",
+    "Kompott"
+  ],
+  "zeroWasteTips": [
+    "Sehr reife Pflaumen einkochen.",
+    "Zu Mus verarbeiten.",
+    "Einfrieren für später."
+  ]
     },
     {
         "id": 8,
@@ -95,7 +181,19 @@
             9
         ],
         "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
+        "averageShelfLifeDays": 7,
+        "description": "Trauben sind ein beliebter Snack und reich an Vitaminen.",
+  "uses": [
+    "Obstsalat",
+    "Snack",
+    "Saft",
+    "Smoothie"
+  ],
+  "zeroWasteTips": [
+    "Trauben einfrieren.",
+    "Zu Saft verarbeiten.",
+    "Überreife Trauben im Smoothie verwenden."
+  ]
     },
     {
         "id": 9,
@@ -116,7 +214,19 @@
             11
         ],
         "storage": "Zimmertemperatur",
-        "averageShelfLifeDays": 7
+        "averageShelfLifeDays": 7,
+        "description": "Bananen sind das ganze Jahr erhältlich und vielseitig einsetzbar.",
+  "uses": [
+    "Bananenbrot",
+    "Smoothie",
+    "Milchshake",
+    "Dessert"
+  ],
+  "zeroWasteTips": [
+    "Braune Bananen für Bananenbrot nutzen.",
+    "Geschälte Bananen einfrieren.",
+    "Zu Smoothies verarbeiten."
+  ]
     },
     {
         "id": 10,
@@ -131,7 +241,19 @@
             11
         ],
         "storage": "Kühlschrank",
-        "averageShelfLifeDays": 14
+        "averageShelfLifeDays": 14,
+        "description": "Kiwis enthalten viel Vitamin C und bleiben lange frisch.",
+  "uses": [
+    "Obstsalat",
+    "Smoothie",
+    "Dessert",
+    "Müsli"
+  ],
+  "zeroWasteTips": [
+    "Reife Kiwis rechtzeitig verbrauchen.",
+    "Zu Smoothies verarbeiten.",
+    "Überreife Früchte zu Marmelade verarbeiten."
+  ]
     },
     {
         "id": 11,

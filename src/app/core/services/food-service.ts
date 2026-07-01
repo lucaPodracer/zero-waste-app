@@ -19,7 +19,7 @@ export class FoodService {
     return this.foods.find(food => food.id === id);
   }
 
-  getFoodBySeason(month: number): Food[] {
+  getFoodsBySeason(month: number): Food[] {
     return this.foods.filter(food => food.seasonMonths.includes(month))
   }
 

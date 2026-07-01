@@ -4,9 +4,9 @@ export interface Food {
     category: FoodCategory;
     seasonMonths: number[]; //Januar = 0 
 
-    storage?: string;
-    averageShelfLifeDays?: number;
-    imageUrl?: string;
+  storage?: string;
+  averageShelfLifeDays?: number;
+  imageUrl?: string;
 }
 
 export type FoodCategory =

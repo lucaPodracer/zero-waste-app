@@ -1,1 +1,51 @@
-<p>pantry works!</p>
+<div class="toolbar">
+
+    <button (click)="openAddDialog()">
+        + Lebensmittel
+    </button>
+
+    <button (click)="viewMode = 'grid'" [class.active]="viewMode === 'grid'">
+        🔲
+    </button>
+
+    <button (click)="viewMode = 'list'" [class.active]="viewMode === 'list'">
+        ☰
+    </button>
+
+</div>
+
+
+@if(viewMode === 'grid') {
+
+<div class="pantry-grid">
+
+    @for(item of pantryItems(); track item.id) {
+
+    <app-pantry-card [item]="item">
+    </app-pantry-card>
+
+    }
+
+</div>
+
+}
+
+
+@if(viewMode === 'list') {
+
+<div class="pantry-list">
+
+    @for(item of pantryItems(); track item.id) {
+
+    <p>
+        {{ item.food.name }}
+        -
+        {{ item.quantity }}
+        {{ item.unit }}
+    </p>
+
+    }
+
+</div>
+
+}

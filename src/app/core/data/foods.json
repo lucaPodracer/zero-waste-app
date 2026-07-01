@@ -1,17 +1,13 @@
 [
     {
-        "id": 1,
-        "name": "Apfel",
-        "category": "Obst",
-        "seasonMonths": [
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 28,
-        "imageUrl": "assets/images/food/apple.jpg"
+      "id": 1,
+      "name": "Apfel",
+      "category": "Obst",
+      "seasonMonths": [8, 9, 10, 11],
+      "storage": "Kühlschrank",
+      "averageShelfLifeDays": 28,
+      "imageUrl": "assets/images/food/apple.jpg",
+      "previewText": "Frisch, knackig und voller Geschmack – Äpfel liefern wertvolle Vitamine, sind leicht, gesund und der perfekte Snack für zwischendurch."
     },
     {
         "id": 2,
@@ -26,16 +22,14 @@
         "averageShelfLifeDays": 14
     },
     {
-        "id": 3,
-        "name": "Erdbeere",
-        "category": "Obst",
-        "seasonMonths": [
-            4,
-            5,
-            6
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 3
+      "id": 3,
+      "name": "Erdbeere",
+      "category": "Obst",
+      "seasonMonths": [4, 5, 6],
+      "storage": "Kühlschrank",
+      "averageShelfLifeDays": 3,
+      "imageUrl": "assets/images/food/strawberries.jpg",
+      "previewText": "Es ist Erdbeerzeit: süß, saftig und voller Vitamine – der perfekte Sommergenuss für zwischendurch."
     },
     {
         "id": 4,
@@ -62,16 +56,14 @@
         "averageShelfLifeDays": 7
     },
     {
-        "id": 6,
-        "name": "Kirsche",
-        "category": "Obst",
-        "seasonMonths": [
-            5,
-            6,
-            7
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 4
+      "id": 6,
+      "name": "Kirsche",
+      "category": "Obst",
+      "seasonMonths": [5, 6, 7],
+      "storage": "Kühlschrank",
+      "averageShelfLifeDays": 4,
+      "imageUrl": "assets/images/food/cherries.jpg",
+      "previewText": "Kirschen begeistern mit süßem Aroma, liefern wertvolle Antioxidantien und sind der perfekte Snack für warme Tage."
     },
     {
         "id": 7,
@@ -134,65 +126,42 @@
         "averageShelfLifeDays": 14
     },
     {
-        "id": 11,
-        "name": "Brokkoli",
-        "category": "Gemüse",
-        "seasonMonths": [
-            7,
-            8,
-            9,
-            10
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
+      "id": 11,
+      "name": "Brokkoli",
+      "category": "Gemüse",
+      "seasonMonths": [7, 8, 9, 10],
+      "storage": "Kühlschrank",
+      "averageShelfLifeDays": 7
     },
     {
-        "id": 12,
-        "name": "Blumenkohl",
-        "category": "Gemüse",
-        "seasonMonths": [
-            5,
-            6,
-            7,
-            8,
-            9
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
+      "id": 12,
+      "name": "Blumenkohl",
+      "category": "Gemüse",
+      "seasonMonths": [5, 6, 7, 8, 9],
+      "storage": "Kühlschrank",
+      "averageShelfLifeDays": 7,
+      "imageUrl": "assets/images/food/cauliflower.jpg",
+      "previewText": "Blumenkohl überzeugt mit mildem Geschmack, vielen Vitaminen und ist vielseitig einsetzbar."
     },
     {
-        "id": 13,
-        "name": "Karotte",
-        "category": "Gemüse",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 21
+      "id": 13,
+      "name": "Karotte",
+      "category": "Gemüse",
+      "seasonMonths": [0, 1, 2, 3, 8, 9, 10, 11],
+      "storage": "Kühlschrank",
+      "averageShelfLifeDays": 21,
+      "imageUrl": "assets/images/food/carrots.jpg",
+      "previewText": "Knackig, leicht süß und reich an Beta-Carotin: Karotten sind ideal für eine gesunde und ausgewogene Ernährung."
     },
     {
-        "id": 14,
-        "name": "Speisekartoffel",
-        "category": "Gemüse",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Dunkel und kühl",
-        "averageShelfLifeDays": 60
+      "id": 14,
+      "name": "Speisekartoffel",
+      "category": "Gemüse",
+      "seasonMonths": [0, 1, 2, 3, 8, 9, 10, 11],
+      "storage": "Dunkel und kühl",
+      "averageShelfLifeDays": 60,
+      "imageUrl": "assets/images/food/potatoes.jpg",
+      "previewText": "Frische Kartoffeln überzeugen mit feinem Geschmack, sind vielseitig einsetzbar und liefern wertvolle Energie für jeden Tag."
     },
     {
         "id": 15,

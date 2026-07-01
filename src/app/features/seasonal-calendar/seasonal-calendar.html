@@ -1,22 +1,100 @@
-
-    <div class="wrapper">
-       <div class="year"></div>
-       <div class="months"></div> 
-       <div class="months">{{ currentMonthName }}</div>
-        <button (click)="nextMonth()">→</button>
+<div class="calendar">
+  <header class="head">
+    <div class="title">
+      <span class="material-symbols-outlined leaf">eco</span> 
+      <div>
+        <h1>Saisonkalender</h1>
+        <p>Entdecke, was jede Saison für dich bereithält.</p>
+      </div>
     </div>
+    <!-- Das sind die drei Buttons oben rechts. Einmal "heute" und dann die beiden Pfeile -->
+    <div class="nav">
+      <button class="today" (click)="chooseSeason(1)">
+        <span class="material-symbols-outlined icon-small">calendar_today</span>
+        Heute
+      </button>
+      <button class="arrow" (click)="lastSeason()">
+        <span class="material-symbols-outlined">chevron_left</span>
+      </button>
+      <button class="arrow" (click)="nextSeason()">
+        <span class="material-symbols-outlined">chevron_right</span>
+      </button>
+    </div>
+  </header>
 
-    <table>
+  <!-- Das sind die 4 Seasons Karten(Sommer, Winter, Frühling, Herbst)  -->
+  <div class="season-cards">
+    <button
+      *ngFor="let s of seasons; let i = index"
+      class="card"
+      [class.active]="i === currentSeasonIndex"
+      (click)="chooseSeason(i)">
+      <span class="material-symbols-outlined card-icon">{{ s.icon }}</span>
+      <span class="card-name">{{ s.name }}</span>
+      <span class="card-range">{{ s.range }}</span>
+    </button>
+  </div>
+
+
+<!-- Tabelle des Saisonkalenders -->
+  <div class="content">
+    <table class="season-table">
+
+       <!-- Tabellenkopf mit den drei Monaten der ausgewählten Jahreszeit -->
+      <thead>
         <tr>
-            <th>Mo</th>
-            <th>Di</th>
-            <th>Mi</th>
-            <th>Do</th>
-            <th>Fr</th>
-            <th>Sa</th>
-            <th>So</th> 
+          <th class="corner"></th>
+          <th *ngFor="let i of [0,1,2]">{{ monthName(i) }}</th>
         </tr>
+      </thead>
+
+       <!-- Tabelleninhalt mit Kategorien und saisonalen Lebensmitteln -->
+      <tbody>
+        <tr *ngFor="let category of visibleCategories"> 
+          <th class="category-label">
+            <span class="material-symbols-outlined category-icon">{{ icon(category) }}</span>
+            {{ category }}
+          </th>
+          <!-- Ausgabe der Lebensmittel für jeden Monat -->
+          <td *ngFor="let i of [0,1,2]">
+            <!-- Zeigt alle verfügbaren Lebensmittel des Monats -->
+            <div class="item" *ngFor="let food of itemsFor(category, i)">
+              {{ food.name }}
+            </div>
+          </td>
+        </tr>
+      </tbody>
     </table>
+   
+    <!-- Kategorienliste mit checkbox, wo man anklicken kann, welche Kategorie im Kalender angezeigt werden soll-->
+    <aside class="sidebar">
+      <section class="filter-panel">
+        <h2>Kategorien</h2>
+        <label *ngFor="let category of categories">
+          <input
+            type="checkbox"
+            [checked]="activeCategories.has(category)"
+            (change)="toggleCategory(category)" />
+          <span class="material-symbols-outlined icon-small">{{ icon(category) }}</span>
+          {{ category }}
+        </label>
+      </section>
+
+      <section class="info-box">
+        <h3>
+          <span class="material-symbols-outlined icon-small">eco</span>
+          So funktioniert's
+        </h3>
+        <p>Wähle eine Jahreszeit, um zu sehen, welche Lebensmittel in diesen Monaten Saison haben.</p>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="notice">
+    <span class="material-symbols-outlined icon-small">info</span>
+    Saisonale Verfügbarkeit kann je nach Region und Witterung variieren.
+  </footer>
+</div>
 
     
     

@@ -21,28 +21,38 @@
 
 .welcome-text {
   // border: 2px solid red;
-  font-size: 140%;
+  font-size: 1.1rem;
+  overflow-wrap: break-word;
 }
 
 .motivation {
   // border: 2px solid blue;
   margin: 10px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 20px;
   background-color: rgb(211 211 211 / 0.50);
 }
 
 .motivation-text {
   // border: 2px solid red;
-  font-size: 140%;
+  font-size: 1.1rem;
+  overflow-wrap: break-word;
 }
 
 .seasonal-food-preview {
   // border: 2px solid blue;
+  max-height: 100%;
   margin: 10px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 20px;
   background-color: rgb(211 211 211 / 0.50);
+}
+
+.seasonal-food-preview-card-container {
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  max-height: 100%;
 }
 
 .pantry-preview {
@@ -55,7 +65,7 @@
   background-color: rgb(211 211 211 / 0.50);
 }
 
-.pantry-header {
+.pantry-preview-header-container {
   // border: 2px solid red;
   margin: 10px;
   padding: 10px;
@@ -64,19 +74,21 @@
 
 .pantry-preview-text {
   // border: 2px solid red;
-  font-size: 140%;
+  font-size: 1.1rem;
+  // overflow-wrap: break-word;
 }
 
-.pantry-preview-list {
+.pantry-preview-list-container {
   // border: 2px solid red;
   margin: 10px;
   border-radius: 20px;
   font-size: 140%;
 }
 
-.pantry-preview-buttons {
+.pantry-preview-button-container {
   border: 2px solid red;
   display: grid;
+  margin-top: 100%;
 }
 
 .pantry-list-button {

@@ -1,11 +1,14 @@
-<div class="preview-card">
-  <div class="preview-card-image">
-    <!-- TODO: Bilder dynamisch aus foods.json laden, je nachdem welches Lebensmittel angezeigt wird -->
-    <!-- <img class ="previewImage" src="./assets/images/foods/Apfel.jpg" alt=""> -->
+<div class="food-preview-card-container">
+  <div class="food-preview-card-image-container">
+    <img class="food-preview-card-image" [src]="imageUrl ?? 'assets/images/food/placeholder.png'" [alt]="foodName">
   </div>
-  <div class="preview-card-text">
-    <!-- TODO: Beschreibung dynamisch aus foods.json laden -->
-    <h1>Lebensmittel</h1>
-    <p>Hier steht ein kurzer Text zum Lebensmittel</p>
+  <div class="food-preview-card-text-container">
+    <h1 class="food-preview-card-text-header">{{ foodName }}</h1>
+    @if (previewText) {
+      <p class="food-preview-card-text">{{ previewText }}</p>
+    }
+    @else {
+      <p class="food-preview-card-text-missing">Für dieses Lebensmittel ist leider noch keine Beschreibung vorhanden.</p>
+    }
   </div>
 </div>

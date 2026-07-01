@@ -1,27 +1,49 @@
 [
-    {
-        "id": 1,
-        "name": "Apfel",
-        "category": "Obst",
-        "seasonMonths": [
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 14,
-        "imageUrl": "assets/images/food/apple.jpg"
-    },
-    {
-        "id": 2,
-        "name": "Brokkoli",
-        "category": "Gemüse",
-        "seasonMonths": [
-            8,
-            9,
-            10,
-            11
-        ],
-        "averageShelfLifeDays": 10
-    }
+  {
+    "id": 1,
+    "name": "Apfel",
+    "category": "Obst",
+    "seasonMonths": [7, 8, 9, 10],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 14,
+    "imageUrl": "assets/images/food/apple.jpg",
+    "previewText": "Frisch, knackig und voller Geschmack – Äpfel liefern wertvolle Vitamine, sind leicht, gesund und der perfekte Snack für zwischendurch."
+  },
+  {
+    "id": 2,
+    "name": "Brokkoli",
+    "category": "Gemüse",
+    "seasonMonths": [4, 5, 6, 7, 8, 9, 10],
+    "averageShelfLifeDays": 10
+  },
+  {
+    "id": 3,
+    "name": "Blumenkohl",
+    "category": "Gemüse",
+    "seasonMonths": [4, 5, 6, 7, 8, 9, 10],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 14,
+    "imageUrl": "assets/images/food/cauliflower.jpg",
+    "previewText": "Blumenkohl überzeugt mit mildem Geschmack, vielen Vitaminen und ist vielseitig einsetzbar."
+  },
+  {
+    "id": 4,
+    "name": "Kirschen",
+    "category": "Obst",
+    "seasonMonths": [5, 6, 7],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 10,
+    "imageUrl": "assets/images/food/cherries.jpg",
+    "previewText": "Kirschen begeistern mit süßem Aroma, liefern wertvolle Antioxidantien und sind der perfekte Snack für warme Tage."
+  },
+  {
+    "id": 5,
+    "name": "Erdbeeren",
+    "category": "Obst",
+    "seasonMonths": [4, 5, 6, 7],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/strawberries.jpg",
+    "previewText": "Es ist Erdbeerzeit: süß, saftig und voller Vitamine – der perfekte Sommergenuss für zwischendurch."
+  }
 ]

@@ -1,13 +1,14 @@
 <body class="home">
   <div class="home-main">
     <article class="welcome">
-      <h1 class="welcome-header">Herzlich Willkommen</h1>
+      <h1 class="welcome-header">Herzlich Willkommen!</h1>
       <p class="welcome-text">
-        Willkommen auf deiner Plattform für bewussten Lebensmittelkonsum. Hier erfährst du auf einen
-        Blick, welche Lebensmittel aktuell Saison haben und kannst deine Einkäufe ganz einfach in
-        einer digitalen Vorratsliste verwalten. So behältst du nicht nur den Überblick über deine
-        Vorräte, sondern auch über Haltbarkeitsdaten – und kannst rechtzeitig nutzen, was bereits
-        vorhanden ist. Unser Ziel ist es, dich dabei zu unterstützen, Lebensmittelverschwendung
+        Willkommen auf deiner Plattform für bewussten Lebensmittelkonsum!<br>
+        Hier erfährst du auf einen Blick, welche Lebensmittel aktuell Saison haben und kannst deine
+        Einkäufe ganz einfach in einer digitalen Vorratsliste verwalten. So behältst du nicht nur
+        den Überblick über deine Vorräte, sondern auch über deren Haltbarkeitsdaten – und kannst
+        rechtzeitig nutzen, was bereits vorhanden ist.<br>
+        Unser Ziel ist es, dich dabei zu unterstützen, Lebensmittelverschwendung
         nachhaltig zu reduzieren. Mit saisonalen Empfehlungen und smarter Organisation wird es
         einfacher, bewusster einzukaufen, effizienter zu planen und wertvolle Ressourcen zu schonen.
         Mach den nächsten Schritt zu einem nachhaltigeren Alltag – ganz ohne großen Aufwand.
@@ -23,7 +24,8 @@
         Transport- und Lageraufwand und bleibt länger frisch. Das wirkt sich nicht nur positiv auf
         Geschmack und Nährstoffgehalt aus, sondern hilft auch dabei, Lebensmittelabfälle zu
         reduzieren. Denn frische, saisonale Produkte verderben weniger schnell und lassen sich
-        besser in den Alltag integrieren. Wer saisonal einkauft, plant automatisch bewusster:
+        besser in den Alltag integrieren.<br>
+        Wer saisonal einkauft, plant automatisch bewusster:
         Man orientiert sich an dem, was verfügbar ist, statt an spontanen, oft überflüssigen Käufen.
         Dadurch sinkt die Wahrscheinlichkeit, dass Lebensmittel ungenutzt im Vorrat landen und
         schließlich entsorgt werden müssen. Mit der Entscheidung für saisonale und regionale
@@ -32,27 +34,27 @@
       </p>
     </article>
 
-    <!-- TODO: Vorschau aktuell saisonaler Lebensmittel implementieren -->
     <div class="seasonal-food-preview">
       <h1>Was hat gerade Saison?</h1>
-      <div class="food-preview-card-section">
-        Dritter Abschnitt. Hier wird eine kleine Auswahl bzw. Vorschau aktuell saisonaler Lebensmittel
-        inkl. Bild und kurzem Text / Details angezeigt. Ggf. inkl. Verlinkung auf Food-List etc.
+      <div class="seasonal-food-preview-card-container">
+        @for (food of previewFoods; track food.id) {
+          <app-food-preview-card [foodName]=food.name [imageUrl]=food.imageUrl [previewText]=food.previewText></app-food-preview-card>
+        }
       </div>
     </div>
   </div>
 
 
   <div class="pantry-preview">
-    <header class="pantry-header">
+    <header class="pantry-preview-header-container">
       <h1 class="pantry-preview-header">Meine Vorräte:</h1>
       <p class="pantry-preview-text">
-        Diese Lebensmittel in deiner Vorratskammer sollten bald verwertet werden, da sie demnächst ablaufen:
+        Diese Lebensmittel aus deiner Vorratskammer sollten bald verwertet werden, da sie demnächst ablaufen:
       </p>
     </header>
 
     <!-- TODO: Vorratsliste laden und bald ablaufende Lebensmittel filtern. Einzelne Elemente in der Liste als Component? -->
-    <div class="pantry-preview-list">
+    <div class="pantry-preview-list-container">
       <ul>
         <li>Lebensmittel 1</li>
         <li>Lebensmittel 2</li>
@@ -61,7 +63,7 @@
       </ul>
     </div>
 
-    <div class="pantry-preview-buttons">
+    <div class="pantry-preview-button-container">
       <!-- TODO: Button-Funktion implementieren (Einkäufe / Lebensmittel zur Vorratskammer hinzufügen) -->
       <button class="add-purchases-button">
         <span class="material-symbols-outlined">add_notes</span>

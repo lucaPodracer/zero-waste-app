@@ -25,10 +25,10 @@ food: Food | undefined;
   ) {}
 
   ngOnInit(): void {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.food = this.foodService.getFoodById(id);
+    const id = Number(this.route.snapshot.paramMap.get('id')); //ermöglicht das wechseln auf der anderen seite 
+    this.food = this.foodService.getFoodById(id); //lädt lebensmittel aus der json datei hoch
   }
-
+ //ermitteln des Saisonzeitraum
   get seasonRange(): string {
     if (!this.food || this.food.seasonMonths.length === 0) return '–';
     const sorted = [...this.food.seasonMonths].sort((a, b) => a - b);
@@ -37,6 +37,7 @@ food: Food | undefined;
     return first === last ? first : `${first} – ${last}`;
   }
 
+  //navigation zur übersicht 
   goBack() {
     this.router.navigate(['/food-list']);
   }

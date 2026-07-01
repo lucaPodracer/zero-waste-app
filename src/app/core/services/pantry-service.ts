@@ -13,7 +13,6 @@ export class PantryService {
     this.loadItems()
   );
 
-
   addItem(
     food: Food,
     quantity?: number,
@@ -21,7 +20,6 @@ export class PantryService {
     restockDate?: Date,
     expiryDate?: Date
   ) {
-
     const added = restockDate ?? new Date();
 
     const item: PantryItem = {
@@ -33,7 +31,6 @@ export class PantryService {
       expiryDate: expiryDate ?? this.calculateExpiryDate(food, added)
     };
 
-
     this.pantryItems.update(items => {
 
       const updatedItems = [
@@ -42,18 +39,14 @@ export class PantryService {
       ];
 
       this.saveItems(updatedItems);
-
       return updatedItems;
     });
-
   }
-
 
   updateQuantity(
     id: string,
     change: number
   ) {
-
     this.pantryItems.update(items => {
 
       const updatedItems = items.map(item => {
@@ -62,7 +55,6 @@ export class PantryService {
           return item;
         }
 
-
         return {
           ...item,
           quantity: Math.max(
@@ -70,23 +62,16 @@ export class PantryService {
             (item.quantity ?? 0) + change
           )
         };
-
       });
 
-
       this.saveItems(updatedItems);
-
       return updatedItems;
-
     });
-
   }
-
 
   getItems() {
     return this.pantryItems;
   }
-
 
   private calculateExpiryDate(
     food: Food,
@@ -97,20 +82,14 @@ export class PantryService {
       return undefined;
     }
 
-
     const date = new Date(restockDate);
-
 
     date.setDate(
       date.getDate() + food.averageShelfLifeDays
     );
 
-
     return date;
-
   }
-
-
 
   private loadItems(): PantryItem[] {
 
@@ -118,14 +97,11 @@ export class PantryService {
       this.storageKey
     );
 
-
     if(!data) {
       return [];
     }
 
-
     const items: PantryItem[] = JSON.parse(data);
-
 
     return items.map(item => ({
       ...item,
@@ -137,8 +113,6 @@ export class PantryService {
 
   }
 
-
-
   private saveItems(
     items: PantryItem[]
   ) {
@@ -149,5 +123,4 @@ export class PantryService {
     );
 
   }
-
 }

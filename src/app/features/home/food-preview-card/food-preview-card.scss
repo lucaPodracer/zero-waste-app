@@ -1,15 +1,45 @@
-.previewCard {
+.food-preview-card-container {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(191 191 191 / 0.5);
   display: flex;
-  min-height: 100%;
-  border-radius: 10px;
+  height: 80%;
+  margin: 10px;
+  padding: 5%;
 }
 
-.pCardImage {
-  min-height: 100%;
+// FIXME: PreviewCard wird zu klein dargestellt, wenn für ein Lebensmittel nur das Placeholder Image angezeigt wird
+
+.food-preview-card-image-container {
   width: 40%;
+  height: 100%;
+  display: flex;
 }
 
-.pCardText {
-  min-height: 100%;
+.food-preview-card-image {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.food-preview-card-text-container {
+  margin: 2%;
   width: 60%;
+  // Scrollbar einblenden, wenn Text zu lang ist
+  overflow-y: auto;
+}
+
+.food-preview-card-text-header {
+  font-size: 1.2rem;
+  overflow-wrap: break-word;
+}
+
+.food-preview-card-text {
+  font-size: 1.1rem;
+  overflow-wrap: break-word;
+}
+
+.food-preview-card-text-missing {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
 }

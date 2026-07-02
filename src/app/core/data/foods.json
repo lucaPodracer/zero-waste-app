@@ -1,1024 +1,662 @@
 [
-    {
-        "id": 1,
-        "name": "Apfel",
-        "category": "Obst",
-        "seasonMonths": [
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 28,
-        "imageUrl": "assets/images/food/apple.jpg"
-    },
-    {
-        "id": 2,
-        "name": "Birne",
-        "category": "Obst",
-        "seasonMonths": [
-            8,
-            9,
-            10
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 14
-    },
-    {
-        "id": 3,
-        "name": "Erdbeere",
-        "category": "Obst",
-        "seasonMonths": [
-            4,
-            5,
-            6
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 3
-    },
-    {
-        "id": 4,
-        "name": "Himbeere",
-        "category": "Obst",
-        "seasonMonths": [
-            5,
-            6,
-            7
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 3
-    },
-    {
-        "id": 5,
-        "name": "Heidelbeere",
-        "category": "Obst",
-        "seasonMonths": [
-            5,
-            6,
-            7
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 6,
-        "name": "Kirsche",
-        "category": "Obst",
-        "seasonMonths": [
-            5,
-            6,
-            7
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 4
-    },
-    {
-        "id": 7,
-        "name": "Pflaume",
-        "category": "Obst",
-        "seasonMonths": [
-            7,
-            8,
-            9
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 8,
-        "name": "Traube",
-        "category": "Obst",
-        "seasonMonths": [
-            7,
-            8,
-            9
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 9,
-        "name": "Banane",
-        "category": "Obst",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Zimmertemperatur",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 10,
-        "name": "Kiwi",
-        "category": "Obst",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 14
-    },
-    {
-        "id": 11,
-        "name": "Brokkoli",
-        "category": "Gemüse",
-        "seasonMonths": [
-            7,
-            8,
-            9,
-            10
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 12,
-        "name": "Blumenkohl",
-        "category": "Gemüse",
-        "seasonMonths": [
-            5,
-            6,
-            7,
-            8,
-            9
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 13,
-        "name": "Karotte",
-        "category": "Gemüse",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 21
-    },
-    {
-        "id": 14,
-        "name": "Speisekartoffel",
-        "category": "Gemüse",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Dunkel und kühl",
-        "averageShelfLifeDays": 60
-    },
-    {
-        "id": 15,
-        "name": "Rispentomate",
-        "category": "Gemüse",
-        "seasonMonths": [
-            5,
-            6,
-            7,
-            8,
-            9
-        ],
-        "storage": "Zimmertemperatur",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 16,
-        "name": "Cherrytomate",
-        "category": "Gemüse",
-        "seasonMonths": [
-            5,
-            6,
-            7,
-            8,
-            9
-        ],
-        "storage": "Zimmertemperatur",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 17,
-        "name": "Salatgurke",
-        "category": "Gemüse",
-        "seasonMonths": [
-            5,
-            6,
-            7,
-            8
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 18,
-        "name": "Paprika",
-        "category": "Gemüse",
-        "seasonMonths": [
-            5,
-            6,
-            7,
-            8,
-            9
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 10
-    },
-    {
-        "id": 19,
-        "name": "Zucchini",
-        "category": "Gemüse",
-        "seasonMonths": [
-            5,
-            6,
-            7,
-            8,
-            9
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 20,
-        "name": "Aubergine",
-        "category": "Gemüse",
-        "seasonMonths": [
-            6,
-            7,
-            8,
-            9
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 21,
-        "name": "Hokkaido-Kürbis",
-        "category": "Gemüse",
-        "seasonMonths": [
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühl und trocken",
-        "averageShelfLifeDays": 60
-    },
-    {
-        "id": 22,
-        "name": "Lauch",
-        "category": "Gemüse",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 14
-    },
-    {
-        "id": 23,
-        "name": "Fenchel",
-        "category": "Gemüse",
-        "seasonMonths": [
-            5,
-            6,
-            7,
-            8,
-            9
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 24,
-        "name": "Rote Bete",
-        "category": "Gemüse",
-        "seasonMonths": [
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 21
-    },
-    {
-        "id": 25,
-        "name": "Radieschen",
-        "category": "Gemüse",
-        "seasonMonths": [
-            3,
-            4,
-            5,
-            6,
-            7
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 26,
-        "name": "Kopfsalat",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 27,
-        "name": "Eisbergsalat",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 28,
-        "name": "Feldsalat",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            9,
-            10,
-            11,
-            0,
-            1
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 4
-    },
-    {
-        "id": 29,
-        "name": "Rucola",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            3,
-            4,
-            5,
-            6,
-            7,
-            8
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 4
-    },
-    {
-        "id": 30,
-        "name": "Basilikum",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            5,
-            6,
-            7,
-            8
-        ],
-        "storage": "Zimmertemperatur",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 31,
-        "name": "Petersilie",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            3,
-            4,
-            5,
-            6,
-            7,
-            8
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 32,
-        "name": "Schnittlauch",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            3,
-            4,
-            5,
-            6,
-            7
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 33,
-        "name": "Champignon",
-        "category": "Gemüse",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 34,
-        "name": "Grüner Spargel",
-        "category": "Gemüse",
-        "seasonMonths": [
-            3,
-            4,
-            5
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 4
-    },
-    {
-        "id": 35,
-        "name": "Zuckerschote",
-        "category": "Gemüse",
-        "seasonMonths": [
-            4,
-            5,
-            6
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 36,
-        "name": "Kohlrabi",
-        "category": "Gemüse",
-        "seasonMonths": [
-            3,
-            4,
-            5,
-            6,
-            7,
-            8
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 14
-    },
-    {
-        "id": 37,
-        "name": "Wirsing",
-        "category": "Gemüse",
-        "seasonMonths": [
-            8,
-            9,
-            10,
-            11,
-            0,
-            1
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 14
-    },
-    {
-        "id": 38,
-        "name": "Rosenkohl",
-        "category": "Gemüse",
-        "seasonMonths": [
-            9,
-            10,
-            11,
-            0,
-            1
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 10
-    },
-    {
-        "id": 39,
-        "name": "Spitzkohl",
-        "category": "Gemüse",
-        "seasonMonths": [
-            4,
-            5,
-            6,
-            7,
-            8
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 10
-    },
-    {
-        "id": 40,
-        "name": "Rotkohl",
-        "category": "Gemüse",
-        "seasonMonths": [
-            8,
-            9,
-            10,
-            11,
-            0
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 21
-    },
-    {
-        "id": 41,
-        "name": "Weißkohl",
-        "category": "Gemüse",
-        "seasonMonths": [
-            8,
-            9,
-            10,
-            11,
-            0
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 21
-    },
-    {
-        "id": 42,
-        "name": "Staudensellerie",
-        "category": "Gemüse",
-        "seasonMonths": [
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 10
-    },
-    {
-        "id": 43,
-        "name": "Pastinake",
-        "category": "Gemüse",
-        "seasonMonths": [
-            9,
-            10,
-            11,
-            0,
-            1,
-            2
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 21
-    },
-    {
-        "id": 44,
-        "name": "Petersilienwurzel",
-        "category": "Gemüse",
-        "seasonMonths": [
-            9,
-            10,
-            11,
-            0,
-            1
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 21
-    },
-    {
-        "id": 45,
-        "name": "Schwarzwurzel",
-        "category": "Gemüse",
-        "seasonMonths": [
-            10,
-            11,
-            0,
-            1
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 14
-    },
-    {
-        "id": 46,
-        "name": "Mangold",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 4
-    },
-    {
-        "id": 47,
-        "name": "Pak Choi",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            3,
-            4,
-            5,
-            9,
-            10
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 48,
-        "name": "Chicorée",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            10,
-            11,
-            0,
-            1,
-            2
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 10
-    },
-    {
-        "id": 49,
-        "name": "Endiviensalat",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 50,
-        "name": "Kresse",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 3
-    },
-    {
-        "id": 51,
-        "name": "Rhabarber",
-        "category": "Obst",
-        "seasonMonths": [
-            3,
-            4,
-            5
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 52,
-        "name": "Pfirsich",
-        "category": "Obst",
-        "seasonMonths": [
-            5,
-            6,
-            7
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 53,
-        "name": "Nektarine",
-        "category": "Obst",
-        "seasonMonths": [
-            5,
-            6,
-            7
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 54,
-        "name": "Aprikose",
-        "category": "Obst",
-        "seasonMonths": [
-            5,
-            6,
-            7
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 55,
-        "name": "Mirabelle",
-        "category": "Obst",
-        "seasonMonths": [
-            7,
-            8
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 56,
-        "name": "Feige",
-        "category": "Obst",
-        "seasonMonths": [
-            7,
-            8,
-            9
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 3
-    },
-    {
-        "id": 57,
-        "name": "Granatapfel",
-        "category": "Obst",
-        "seasonMonths": [
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 30
-    },
-    {
-        "id": 58,
-        "name": "Mango",
-        "category": "Obst",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Zimmertemperatur",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 59,
-        "name": "Honigmelone",
-        "category": "Obst",
-        "seasonMonths": [
-            5,
-            6,
-            7,
-            8
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 60,
-        "name": "Wassermelone",
-        "category": "Obst",
-        "seasonMonths": [
-            5,
-            6,
-            7,
-            8
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 61,
-        "name": "Ananas",
-        "category": "Obst",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Zimmertemperatur",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 62,
-        "name": "Grapefruit",
-        "category": "Obst",
-        "seasonMonths": [
-            11,
-            0,
-            1,
-            2,
-            3
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 21
-    },
-    {
-        "id": 63,
-        "name": "Limette",
-        "category": "Obst",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 21
-    },
-    {
-        "id": 64,
-        "name": "Austernpilz",
-        "category": "Gemüse",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 65,
-        "name": "Schnittlauch",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            3,
-            4,
-            5,
-            6,
-            7,
-            8
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 66,
-        "name": "Dill",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            4,
-            5,
-            6,
-            7,
-            8
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 67,
-        "name": "Koriander",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            4,
-            5,
-            6,
-            7,
-            8
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 5
-    },
-    {
-        "id": 68,
-        "name": "Minze",
-        "category": "Salat & Kräuter",
-        "seasonMonths": [
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 7
-    },
-    {
-        "id": 69,
-        "name": "Ingwer",
-        "category": "Gemüse",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 30
-    },
-    {
-        "id": 70,
-        "name": "Frischer Kurkuma",
-        "category": "Gemüse",
-        "seasonMonths": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11
-        ],
-        "storage": "Kühlschrank",
-        "averageShelfLifeDays": 21
-    }
+  {
+    "id": 1,
+    "name": "Apfel",
+    "category": "Obst",
+    "seasonMonths": [8, 9, 10, 11],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 28,
+    "imageUrl": "assets/images/food/apple.jpg",
+    "previewText": "Frisch, knackig und voller Geschmack – Äpfel liefern wertvolle Vitamine, sind leicht, gesund und der perfekte Snack für zwischendurch."
+  },
+  {
+    "id": 2,
+    "name": "Birne",
+    "category": "Obst",
+    "seasonMonths": [8, 9, 10],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 14,
+    "imageUrl": "assets/images/food/pear.jpg",
+    "previewText": "Birnen haben jetzt Saison: saftig, mild und herrlich aromatisch – ein feiner Snack für jeden Tag."
+  },
+  {
+    "id": 3,
+    "name": "Erdbeere",
+    "category": "Obst",
+    "seasonMonths": [4, 5, 6],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 3,
+    "imageUrl": "assets/images/food/strawberries.jpg",
+    "previewText": "Es ist Erdbeerzeit: süß, saftig und voller Vitamine – der perfekte Sommergenuss für zwischendurch."
+  },
+  {
+    "id": 4,
+    "name": "Himbeere",
+    "category": "Obst",
+    "seasonMonths": [5, 6, 7],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 3,
+    "imageUrl": "assets/images/food/raspberries.jpg",
+    "previewText": "Himbeeren haben jetzt Saison: fein, fruchtig und ideal für einen leichten Genuss im Sommer."
+  },
+  {
+    "id": 5,
+    "name": "Heidelbeere",
+    "category": "Obst",
+    "seasonMonths": [5, 6, 7],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/blueberries.jpg",
+    "previewText": "Heidelbeeren sind jetzt in Saison: klein, aromatisch und voller fruchtigem Geschmack."
+  },
+  {
+    "id": 6,
+    "name": "Kirsche",
+    "category": "Obst",
+    "seasonMonths": [5, 6, 7],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 4,
+    "imageUrl": "assets/images/food/cherries.jpg",
+    "previewText": "Kirschen begeistern mit süßem Aroma, liefern wertvolle Antioxidantien und sind der perfekte Snack für warme Tage."
+  },
+  {
+    "id": 7,
+    "name": "Pflaume",
+    "category": "Obst",
+    "seasonMonths": [7, 8, 9],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/plums.jpg",
+    "previewText": "Pflaumen haben jetzt Saison: saftig, süß-säuerlich und wunderbar aromatisch."
+  },
+  {
+    "id": 8,
+    "name": "Traube",
+    "category": "Obst",
+    "seasonMonths": [7, 8, 9],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/grapes.jpg",
+    "previewText": "Trauben sind jetzt saisonal besonders lecker: süß, frisch und perfekt zum Naschen."
+  },
+  {
+    "id": 9,
+    "name": "Banane",
+    "category": "Obst",
+    "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "storage": "Zimmertemperatur",
+    "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/bananas.jpg",
+    "previewText": "Bananen sind das ganze Jahr verfügbar: praktisch, cremig und ideal als schneller Energiespender."
+  },
+  {
+    "id": 10,
+    "name": "Kiwi",
+    "category": "Obst",
+    "seasonMonths": [0, 1, 2, 3, 10, 11],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 14,
+    "imageUrl": "assets/images/food/kiwis.jpg",
+    "previewText": "Kiwi hat jetzt Saison: frisch, fruchtig und angenehm exotisch im Geschmack."
+  },
+  {
+    "id": 11,
+    "name": "Brokkoli",
+    "category": "Gemüse",
+    "seasonMonths": [7, 8, 9, 10],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/broccoli.jpg",
+    "previewText": "Brokkoli ist jetzt in Saison: knackig, vielseitig und reich an wertvollen Nährstoffen."
+  },
+  {
+    "id": 12,
+    "name": "Blumenkohl",
+    "category": "Gemüse",
+    "seasonMonths": [5, 6, 7, 8, 9],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/cauliflower.jpg",
+    "previewText": "Blumenkohl überzeugt mit mildem Geschmack, vielen Vitaminen und ist vielseitig einsetzbar."
+  },
+  {
+    "id": 13,
+    "name": "Karotte",
+    "category": "Gemüse",
+    "seasonMonths": [0, 1, 2, 3, 8, 9, 10, 11],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 21,
+    "imageUrl": "assets/images/food/carrots.jpg",
+    "previewText": "Knackig, leicht süß und reich an Beta-Carotin: Karotten sind ideal für eine gesunde und ausgewogene Ernährung."
+  },
+  {
+    "id": 14,
+    "name": "Speisekartoffel",
+    "category": "Gemüse",
+    "seasonMonths": [0, 1, 2, 3, 8, 9, 10, 11],
+    "storage": "Dunkel und kühl",
+    "averageShelfLifeDays": 60,
+    "imageUrl": "assets/images/food/potatoes.jpg",
+    "previewText": "Frische Kartoffeln überzeugen mit feinem Geschmack, sind vielseitig einsetzbar und liefern wertvolle Energie für jeden Tag."
+  },
+  {
+    "id": 15,
+    "name": "Rispentomate",
+    "category": "Gemüse",
+    "seasonMonths": [5, 6, 7, 8, 9],
+    "storage": "Zimmertemperatur",
+    "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/vine_tomatoes.jpg",
+    "previewText": "Rispentomaten haben jetzt Saison: sonnig, aromatisch und perfekt für frische Gerichte."
+  },
+  {
+    "id": 16,
+    "name": "Cherrytomate",
+    "category": "Gemüse",
+    "seasonMonths": [5, 6, 7, 8, 9],
+    "storage": "Zimmertemperatur",
+    "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/cherry_tomato.jpg",
+    "previewText": "Cherrytomaten sind jetzt besonders aromatisch: klein, süß und ideal zum Snacken."
+  },
+  {
+    "id": 17,
+    "name": "Salatgurke",
+    "category": "Gemüse",
+    "seasonMonths": [5, 6, 7, 8],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/cucumber.jpg",
+    "previewText": "Salatgurken haben jetzt Saison: frisch, knackig und herrlich leicht."
+  },
+  {
+    "id": 18,
+    "name": "Paprika",
+    "category": "Gemüse",
+    "seasonMonths": [5, 6, 7, 8, 9],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 10,
+    "imageUrl": "assets/images/food/bell_pepper.jpg",
+    "previewText": "Paprika ist jetzt saisonal besonders lecker: bunt, knackig und voller Aroma."
+  },
+  {
+    "id": 19,
+    "name": "Zucchini",
+    "category": "Gemüse",
+    "seasonMonths": [5, 6, 7, 8, 9],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/zucchini.jpg",
+    "previewText": "Zucchini haben jetzt Saison: mild, leicht und vielseitig in der Küche."
+  },
+  {
+    "id": 20,
+    "name": "Aubergine",
+    "category": "Gemüse",
+    "seasonMonths": [6, 7, 8, 9],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/eggplant.jpg",
+    "previewText": "Auberginen sind jetzt saisonal: zart, würzig und ideal für mediterrane Gerichte."
+  },
+  {
+    "id": 21,
+    "name": "Hokkaido-Kürbis",
+    "category": "Gemüse",
+    "seasonMonths": [8, 9, 10, 11],
+    "storage": "Kühl und trocken",
+    "averageShelfLifeDays": 60,
+    "previewText": "Hokkaido-Kürbis hat jetzt Saison: aromatisch, cremig und perfekt für herbstliche Gerichte."
+  },
+  {
+    "id": 22,
+    "name": "Lauch",
+    "category": "Gemüse",
+    "seasonMonths": [0, 1, 2, 3, 9, 10, 11],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 14,
+    "previewText": "Lauch hat jetzt Saison: mild-würzig, vielseitig und ideal für Suppen und Pfannen."
+  },
+  {
+    "id": 23,
+    "name": "Fenchel",
+    "category": "Gemüse",
+    "seasonMonths": [5, 6, 7, 8, 9],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "previewText": "Fenchel ist jetzt saisonal frisch: fein-aromatisch und wunderbar vielseitig."
+  },
+  {
+    "id": 24,
+    "name": "Rote Bete",
+    "category": "Gemüse",
+    "seasonMonths": [8, 9, 10, 11],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 21,
+    "previewText": "Rote Bete hat jetzt Saison: erdig, aromatisch und voller Farbe für deine Küche."
+  },
+  {
+    "id": 25,
+    "name": "Radieschen",
+    "category": "Gemüse",
+    "seasonMonths": [3, 4, 5, 6, 7],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/radish.jpg",
+    "previewText": "Radieschen sind jetzt in Saison: knackig, leicht scharf und perfekt für frische Salate."
+  },
+  {
+    "id": 26,
+    "name": "Kopfsalat",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [4, 5, 6, 7, 8, 9],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "previewText": "Kopfsalat hat jetzt Saison: frisch, zart und ideal für leichte Salate."
+  },
+  {
+    "id": 27,
+    "name": "Eisbergsalat",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [4, 5, 6, 7, 8, 9],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/iceberg_salad.jpg",
+    "previewText": "Eisbergsalat ist jetzt saisonal frisch: knackig, mild und besonders erfrischend."
+  },
+  {
+    "id": 28,
+    "name": "Feldsalat",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [9, 10, 11, 0, 1],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 4,
+    "previewText": "Feldsalat hat jetzt Saison: fein, aromatisch und perfekt für herbstliche und winterliche Salate."
+  },
+  {
+    "id": 29,
+    "name": "Rucola",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [3, 4, 5, 6, 7, 8],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 4,
+    "imageUrl": "assets/images/food/arugula.jpg",
+    "previewText": "Rucola ist jetzt in Saison: würzig, frisch und ideal für aromatische Salate."
+  },
+  {
+    "id": 30,
+    "name": "Basilikum",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [5, 6, 7, 8],
+    "storage": "Zimmertemperatur",
+    "averageShelfLifeDays": 5,
+    "previewText": "Basilikum ist jetzt saisonal besonders aromatisch: frisch, duftend und perfekt für mediterrane Gerichte."
+  },
+  {
+    "id": 31,
+    "name": "Petersilie",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [3, 4, 5, 6, 7, 8],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "previewText": "Petersilie hat jetzt Saison: frisch, würzig und vielseitig einsetzbar."
+  },
+  {
+    "id": 32,
+    "name": "Schnittlauch",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [3, 4, 5, 6, 7],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "previewText": "Schnittlauch ist jetzt in Saison: fein würzig und ideal zum Verfeinern."
+  },
+  {
+    "id": 33,
+    "name": "Champignon",
+    "category": "Gemüse",
+    "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "previewText": "Champignons sind das ganze Jahr verfügbar: mild, aromatisch und vielseitig in der Küche."
+  },
+  {
+    "id": 34,
+    "name": "Grüner Spargel",
+    "category": "Gemüse",
+    "seasonMonths": [3, 4, 5],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 4,
+    "previewText": "Grüner Spargel hat jetzt Saison: zart, aromatisch und ein echter Frühlingsklassiker."
+  },
+  {
+    "id": 35,
+    "name": "Zuckerschote",
+    "category": "Gemüse",
+    "seasonMonths": [4, 5, 6],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "previewText": "Zuckerschoten sind jetzt in Saison: knackig, süß und ideal zum Snacken oder Kochen."
+  },
+  {
+    "id": 36,
+    "name": "Kohlrabi",
+    "category": "Gemüse",
+    "seasonMonths": [3, 4, 5, 6, 7, 8],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 14,
+    "imageUrl": "assets/images/food/kohlrabi.jpg",
+    "previewText": "Kohlrabi hat jetzt Saison: frisch, mild und wunderbar knackig."
+  },
+  {
+    "id": 37,
+    "name": "Wirsing",
+    "category": "Gemüse",
+    "seasonMonths": [8, 9, 10, 11, 0, 1],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 14,
+    "previewText": "Wirsing ist jetzt saisonal besonders gut: herzhaft, vielseitig und voller Geschmack."
+  },
+  {
+    "id": 38,
+    "name": "Rosenkohl",
+    "category": "Gemüse",
+    "seasonMonths": [9, 10, 11, 0, 1],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 10,
+    "imageUrl": "assets/images/food/brussels_sprouts.jpg",
+    "previewText": "Rosenkohl hat jetzt Saison: aromatisch, nussig und perfekt für die kalte Jahreszeit."
+  },
+  {
+    "id": 39,
+    "name": "Spitzkohl",
+    "category": "Gemüse",
+    "seasonMonths": [4, 5, 6, 7, 8],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 10,
+    "previewText": "Spitzkohl ist jetzt in Saison: mild, zart und ideal für leichte Gerichte."
+  },
+  {
+    "id": 40,
+    "name": "Rotkohl",
+    "category": "Gemüse",
+    "seasonMonths": [8, 9, 10, 11, 0],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 21,
+    "previewText": "Rotkohl hat jetzt Saison: kräftig im Geschmack, farbintensiv und vielseitig einsetzbar."
+  },
+  {
+    "id": 41,
+    "name": "Weißkohl",
+    "category": "Gemüse",
+    "seasonMonths": [8, 9, 10, 11, 0],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 21,
+    "previewText": "Weißkohl ist jetzt in Saison: knackig, mild und perfekt für deftige wie leichte Gerichte."
+  },
+  {
+    "id": 42,
+    "name": "Staudensellerie",
+    "category": "Gemüse",
+    "seasonMonths": [4, 5, 6, 7, 8, 9],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 10,
+    "previewText": "Staudensellerie hat jetzt Saison: frisch, würzig und ideal für Salate und Suppen."
+  },
+  {
+    "id": 43,
+    "name": "Pastinake",
+    "category": "Gemüse",
+    "seasonMonths": [9, 10, 11, 0, 1, 2],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 21,
+    "previewText": "Pastinaken sind jetzt saisonal besonders gut: fein süßlich, aromatisch und wärmend in der Küche."
+  },
+  {
+    "id": 44,
+    "name": "Petersilienwurzel",
+    "category": "Gemüse",
+    "seasonMonths": [9, 10, 11, 0, 1],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 21,
+    "previewText": "Petersilienwurzel hat jetzt Saison: würzig, aromatisch und perfekt für Suppen und Eintöpfe."
+  },
+  {
+    "id": 45,
+    "name": "Schwarzwurzel",
+    "category": "Gemüse",
+    "seasonMonths": [10, 11, 0, 1],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 14,
+    "previewText": "Schwarzwurzel ist jetzt in Saison: zart, fein nussig und wunderbar vielseitig."
+  },
+  {
+    "id": 46,
+    "name": "Mangold",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [4, 5, 6, 7, 8, 9],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 4,
+    "previewText": "Mangold hat jetzt Saison: farbenfroh, mild und ideal für kreative Küche."
+  },
+  {
+    "id": 47,
+    "name": "Pak Choi",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [3, 4, 5, 9, 10],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "previewText": "Pak Choi ist jetzt saisonal frisch: zart, mild und perfekt für asiatische Gerichte."
+  },
+  {
+    "id": 48,
+    "name": "Chicorée",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [10, 11, 0, 1, 2],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 10,
+    "previewText": "Chicorée hat jetzt Saison: fein bitter, frisch und ideal für herzhafte Salate."
+  },
+  {
+    "id": 49,
+    "name": "Endiviensalat",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [5, 6, 7, 8, 9, 10],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "previewText": "Endiviensalat ist jetzt in Saison: knackig, leicht herb und perfekt für frische Salate."
+  },
+  {
+    "id": 50,
+    "name": "Kresse",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 3,
+    "previewText": "Kresse ist das ganze Jahr verfügbar: frisch, würzig und ideal zum Verfeinern."
+  },
+  {
+    "id": 51,
+    "name": "Rhabarber",
+    "category": "Obst",
+    "seasonMonths": [3, 4, 5],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "previewText": "Rhabarber hat jetzt Saison: frisch, säuerlich und ideal für Desserts und Kuchen."
+  },
+  {
+    "id": 52,
+    "name": "Pfirsich",
+    "category": "Obst",
+    "seasonMonths": [5, 6, 7],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/peaches.jpg",
+    "previewText": "Pfirsiche haben jetzt Saison: saftig, süß und herrlich sommerlich."
+  },
+  {
+    "id": 53,
+    "name": "Nektarine",
+    "category": "Obst",
+    "seasonMonths": [5, 6, 7],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/nectarines.jpg",
+    "previewText": "Nektarinen sind jetzt in Saison: aromatisch, saftig und angenehm süß."
+  },
+  {
+    "id": 54,
+    "name": "Aprikose",
+    "category": "Obst",
+    "seasonMonths": [5, 6, 7],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/apricots.jpg",
+    "previewText": "Aprikosen haben jetzt Saison: fein süß, sonnig und perfekt für den Sommer."
+  },
+  {
+    "id": 55,
+    "name": "Mirabelle",
+    "category": "Obst",
+    "seasonMonths": [7, 8],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "previewText": "Mirabellen sind jetzt saisonal frisch: klein, süß und voller feinem Aroma."
+  },
+  {
+    "id": 56,
+    "name": "Feige",
+    "category": "Obst",
+    "seasonMonths": [7, 8, 9],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 3,
+    "imageUrl": "assets/images/food/figs.jpg",
+    "previewText": "Feigen haben jetzt Saison: weich, süß und wunderbar aromatisch."
+  },
+  {
+    "id": 57,
+    "name": "Granatapfel",
+    "category": "Obst",
+    "seasonMonths": [9, 10, 11],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 30,
+    "imageUrl": "assets/images/food/pomegranate.jpg",
+    "previewText": "Granatäpfel sind jetzt in Saison: fruchtig, frisch und mit angenehm knackigen Kernen."
+  },
+  {
+    "id": 58,
+    "name": "Mango",
+    "category": "Obst",
+    "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "storage": "Zimmertemperatur",
+    "averageShelfLifeDays": 7,
+    "previewText": "Mango ist das ganze Jahr verfügbar: exotisch, saftig und herrlich süß."
+  },
+  {
+    "id": 59,
+    "name": "Honigmelone",
+    "category": "Obst",
+    "seasonMonths": [5, 6, 7, 8],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "previewText": "Honigmelone hat jetzt Saison: süß, saftig und wunderbar erfrischend."
+  },
+  {
+    "id": 60,
+    "name": "Wassermelone",
+    "category": "Obst",
+    "seasonMonths": [5, 6, 7, 8],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "previewText": "Wassermelone ist jetzt in Saison: erfrischend, saftig und perfekt für warme Tage."
+  },
+  {
+    "id": 61,
+    "name": "Ananas",
+    "category": "Obst",
+    "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "storage": "Zimmertemperatur",
+    "averageShelfLifeDays": 5,
+    "previewText": "Ananas ist das ganze Jahr verfügbar: exotisch, süß-säuerlich und intensiv im Geschmack."
+  },
+  {
+    "id": 62,
+    "name": "Grapefruit",
+    "category": "Obst",
+    "seasonMonths": [11, 0, 1, 2, 3],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 21,
+    "previewText": "Grapefruit hat jetzt Saison: frisch, leicht bitter und herrlich belebend."
+  },
+  {
+    "id": 63,
+    "name": "Limette",
+    "category": "Obst",
+    "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 21,
+    "previewText": "Limetten sind das ganze Jahr verfügbar: frisch, spritzig und perfekt zum Verfeinern."
+  },
+  {
+    "id": 64,
+    "name": "Austernpilz",
+    "category": "Gemüse",
+    "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "previewText": "Austernpilze sind das ganze Jahr verfügbar: mild, zart und vielseitig in der Küche."
+  },
+  {
+    "id": 65,
+    "name": "Schnittlauch",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [3, 4, 5, 6, 7, 8],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "previewText": "Schnittlauch hat jetzt Saison: frisch, fein würzig und ideal zum Verfeinern."
+  },
+  {
+    "id": 66,
+    "name": "Dill",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [4, 5, 6, 7, 8],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "previewText": "Dill ist jetzt in Saison: frisch, aromatisch und perfekt für Fisch, Salate und Soßen."
+  },
+  {
+    "id": 67,
+    "name": "Koriander",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [4, 5, 6, 7, 8],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 5,
+    "previewText": "Koriander hat jetzt Saison: frisch, intensiv und ideal für würzige Gerichte."
+  },
+  {
+    "id": 68,
+    "name": "Minze",
+    "category": "Salat & Kräuter",
+    "seasonMonths": [4, 5, 6, 7, 8, 9],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 7,
+    "previewText": "Minze ist jetzt saisonal besonders frisch: kühlend, aromatisch und vielseitig einsetzbar."
+  },
+  {
+    "id": 69,
+    "name": "Ingwer",
+    "category": "Gemüse",
+    "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 30,
+    "previewText": "Ingwer ist das ganze Jahr verfügbar: würzig, aromatisch und angenehm belebend."
+  },
+  {
+    "id": 70,
+    "name": "Frischer Kurkuma",
+    "category": "Gemüse",
+    "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "storage": "Kühlschrank",
+    "averageShelfLifeDays": 21,
+    "previewText": "Frischer Kurkuma ist das ganze Jahr verfügbar: aromatisch, würzig und vielseitig einsetzbar."
+  }
 ]

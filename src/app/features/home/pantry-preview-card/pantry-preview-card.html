@@ -1,8 +1,9 @@
-<div class="pantry-preview-card-entity">
-  <div class="pantry-preview-food-name">
-    <!-- TODO: Name dynamisch holen -->
-  </div>
-  <div class="pantry-preview-shelf-days-left">
-    <!-- TODO: Dynamisch übrige Lagerungstage vor Verderb ermitteln -->
-  </div>
+<div class="pantry-preview-card-container">
+  <p class="pantry-preview-item-name">{{ pantryItemName }}</p>
+  @if (expiryDate) {
+    <p class="pantry-preview-shelf-days-left">{{ expiryDate | date:'dd.MM.yyyy' }}</p>
+  } @else {
+    <p class="pantry-preview-shelf-days-left-missing">Kein Ablaufdatum eingetragen</p>
+  }
+  <!-- TODO: Button zum löschen hinzufügen, falls Lebensmittel direkt verbraucht wird? -->
 </div>

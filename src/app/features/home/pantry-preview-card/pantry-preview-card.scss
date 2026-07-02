@@ -1,19 +1,29 @@
 .pantry-preview-card-container {
-  border: 2px solid red;
   border-radius: 20px;
   display: flex;
+  justify-content: space-between;
   margin: 1%;
-  height: 100px;
+  max-height: 8%;
+  background-color: #4cae50;
 }
 
 .pantry-preview-item-name {
-
+  margin: 2%;
+  align-content: center;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  color: white;
 }
 
 .pantry-preview-shelf-days-left {
-
+  margin: 2%;
+  align-content: center;
+  font-size: clamp(0.6rem, 2vw, 1rem);
+  color: white;
 }
 
 .pantry-preview-shelf-days-left-missing {
-
+  margin: 4%;
+  align-content: center;
+  font-size: clamp(0.5rem, 2vw, 1rem);
+  color: white;
 }

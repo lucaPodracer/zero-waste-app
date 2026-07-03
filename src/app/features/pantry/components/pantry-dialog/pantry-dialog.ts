@@ -7,6 +7,10 @@ import { QuantityUnit } from '../../../../core/models/pantry-item';
 import { FormsModule } from '@angular/forms';
 import { PantryItem } from '../../../../core/models/pantry-item';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatIconModule } from '@angular/material/icon';
+import { CommonModule } from '@angular/common';
+import { ChangeDetectorRef } from '@angular/core';
 //Datepicker Modul nötige imports
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -15,6 +19,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { OpenFoodFactsService } from '../../../../core/services/openfoodfacts-service';
 
 @Component({
   selector: 'app-pantry-dialog',
@@ -25,7 +30,11 @@ import { MatCardModule } from '@angular/material/card';
     MatButtonModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatCardModule],
+    MatCardModule,
+    MatCheckboxModule,
+    MatIconModule,
+    CommonModule],
+  standalone: true,
   templateUrl: './pantry-dialog.html',
   styleUrl: './pantry-dialog.scss'
 })
@@ -35,6 +44,8 @@ export class PantryDialog {
   private pantryService = inject(PantryService);
   private foodService = inject(FoodService);
   private data = inject<PantryItem | null>(MAT_DIALOG_DATA);
+  private openFoodFacts = inject(OpenFoodFactsService);
+  private cdr = inject(ChangeDetectorRef);
 
   restockDate = new Date();
   expiryDate?: Date;
@@ -46,6 +57,9 @@ export class PantryDialog {
 
   isEditMode = false;
   editingItem: PantryItem | null = null;
+  useApiSearch = false;
+  barcode = '';
+  barcodeError = '';
 
   ngOnInit() {
     if (this.data) {
@@ -62,41 +76,47 @@ export class PantryDialog {
   }
 
   save() {
-  const name = this.selectedFood?.name ?? this.searchText?.trim();
 
-  if (!name) return;
-  if (!this.quantity || this.quantity < 1) return;
+    const hasSelectedFood = !!this.selectedFood;
 
-  const food = this.selectedFood ?? {
-    id: Date.now(),
-    name,
-    category: 'Sonstiges',
-    seasonMonths: []
-  };
+    const name = this.selectedFood?.name || this.searchText?.trim();
 
-  const item: PantryItem = {
-    id: this.editingItem?.id ?? crypto.randomUUID(),
-    food,
-    quantity: this.quantity,
-    unit: this.unit,
-    restockDate: this.restockDate,
-    expiryDate: this.expiryDate
-  };
+    if (!name) return;
 
-  if (this.isEditMode) {
-    this.pantryService.updateItem(item);
-  } else {
-    this.pantryService.addItem(
+    if (!this.quantity || this.quantity < 1) return;
+
+    const food: Food = hasSelectedFood
+      ? this.selectedFood
+      : {
+        id: crypto.randomUUID(),
+        name,
+        category: 'Sonstiges',
+        seasonMonths: []
+      };
+
+    const item: PantryItem = {
+      id: this.editingItem?.id ?? crypto.randomUUID(),
       food,
-      this.quantity,
-      this.unit,
-      this.restockDate,
-      this.expiryDate
-    );
-  }
+      quantity: this.quantity,
+      unit: this.unit,
+      restockDate: this.restockDate,
+      expiryDate: this.expiryDate
+    };
 
-  this.dialogRef.close();
-}
+    if (this.isEditMode) {
+      this.pantryService.updateItem(item);
+    } else {
+      this.pantryService.addItem(
+        food,
+        this.quantity,
+        this.unit,
+        this.restockDate,
+        this.expiryDate
+      );
+    }
+
+    this.dialogRef.close();
+  }
 
 
   cancel() {
@@ -104,16 +124,73 @@ export class PantryDialog {
   }
 
   onSearch() {
-    this.filteredFoods = this.foodService.searchForFood(
-      this.searchText
-    );
+    this.foodService
+      .searchForFood(this.searchText, this.useApiSearch)
+      .subscribe(foods => {
+        this.filteredFoods = foods;
+      });
   }
 
   selectFood(food: Food) {
     this.selectedFood = food;
-    this.searchText = food.name;
+
+    queueMicrotask(() => {
+      this.searchText = food.name;
+    });
 
     this.filteredFoods = [];
   }
 
+  closeSuggestions() {
+    this.filteredFoods = [];
+  }
+
+  searchBarcode() {
+
+    console.log('🔥 CLICK angekommen');
+
+    if (!this.barcode.trim()) {
+      console.log('⛔ Barcode leer');
+      return;
+    }
+
+    console.log('➡️ Barcode:', this.barcode);
+    if (!this.barcode.trim()) return;
+
+    this.barcodeError = '';
+
+    setTimeout(() => {
+      this.openFoodFacts.getProduct(this.barcode).subscribe({
+        next: (response) => {
+
+          if (!response.product) {
+            this.barcodeError = 'Produkt nicht gefunden';
+            return;
+          }
+
+          const food: Food = {
+            id: response.product.code,
+            name: response.product.product_name || 'Unbekannt',
+            category: 'Sonstiges',
+            seasonMonths: [],
+            imageUrl: response.product.image_front_url || response.product.image_url
+          };
+
+          this.selectedFood = food;
+
+          queueMicrotask(() => {
+            this.searchText = food.name;
+          });
+          this.searchText = this.searchText + ' ';
+          this.searchText = this.searchText.trim();
+
+          this.filteredFoods = [];
+        },
+
+        error: () => {
+          this.barcodeError = 'Fehler beim Laden der API';
+        }
+      });
+    }, 0);
+  }
 }

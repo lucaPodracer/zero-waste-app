@@ -1,5 +1,5 @@
 export interface Food {
-    id: number;
+    id: number|string;
     name: string;
     category: FoodCategory;
     seasonMonths: number[]; //Januar = 0

@@ -18,7 +18,7 @@
       <!--Name des Lebensmittels und Kategorie-->
       <div class="info">
         <div class="name-row">
-          <h1>{{ food.name }}</h1>
+          <h2>{{ food.name }}</h2>
           <span class="category-badge">{{ food.category }}</span>
         </div>
 
@@ -59,7 +59,7 @@
         </ul>
       </div>
 
-     <!--Karte von Verwendungsideen--> 
+     <!--Karte von Verwendungsideen-->
       <div class="card" *ngIf="food.uses && food.uses.length > 0">
         <div class="card-header">
           <span class="card-icon green">

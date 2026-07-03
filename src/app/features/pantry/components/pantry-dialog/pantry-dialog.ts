@@ -147,17 +147,6 @@ export class PantryDialog {
   }
 
   searchBarcode() {
-
-    console.log('🔥 CLICK angekommen');
-
-    if (!this.barcode.trim()) {
-      console.log('⛔ Barcode leer');
-      return;
-    }
-
-    console.log('➡️ Barcode:', this.barcode);
-    if (!this.barcode.trim()) return;
-
     this.barcodeError = '';
 
     setTimeout(() => {

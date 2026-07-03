@@ -1,8 +1,8 @@
 .food-grid {
-    margin: 10px;
+    margin: 1%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 20px;
+    gap: 1rem;
 }
 
 .food-card {
@@ -23,15 +23,15 @@
 }
 
 .food-content {
-    padding: 16px;
+    padding: 5%;
 }
 
 .detail-btn {
   display: flex;
   align-items: center;
-  gap: 6px;
-  margin-top: 12px;
-  padding: 8px 16px;
+  gap: 0.5rem;
+  margin-top: 5%;
+  padding: 3% 5%;
   border: none;
   border-radius: 8px;
   background: #4caf6e;

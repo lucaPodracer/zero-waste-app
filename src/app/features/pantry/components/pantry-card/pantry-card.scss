@@ -6,7 +6,7 @@
 }
 
 .pantry-image {
-    height: 160px;
+    height: 10rem;
 }
 
 .pantry-image img {
@@ -16,7 +16,7 @@
 }
 
 .pantry-content {
-    padding: 16px;
+    padding: 6%;
 }
 
 .expiry {
@@ -61,14 +61,14 @@
 
 .quantity-controls {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .card-actions {
     display: flex;
     justify-content: flex-end;
-    gap: 8px;
-    margin-top: 10px;
+    gap: 0.5rem;
+    margin-top: 5%;
 }
 
 .quantity-controls button,
@@ -101,7 +101,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 12px;
+    margin-top: 6%;
 }
 
 .expiry-info {

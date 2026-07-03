@@ -1,9 +1,17 @@
-import { Component } from '@angular/core';
+// noinspection AngularUnusedComponentImport
+
+import { Component, Input } from '@angular/core';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-pantry-preview-card',
-  imports: [],
+  // eslint-disable-next-line @angular-eslint/no-unused-vars
+  imports: [DatePipe],
   templateUrl: './pantry-preview-card.html',
   styleUrl: './pantry-preview-card.scss',
 })
-export class PantryPreviewCard {}
+export class PantryPreviewCard {
+  // TODO: Noch ein Bild oder Icon mit anzeigen?
+  @Input() pantryItemName: string = '';
+  @Input() expiryDate?: Date;
+}

@@ -69,6 +69,11 @@ export class SeasonalCalendar implements OnInit {
   // Lädt beim Start des Kalenders alle verfügbaren Lebensmittel
   ngOnInit(): void {
     this.foods = this.foodService.getFoods(); 
+
+    // Kategorien automatisch aus der JSON ermitteln
+  const vorhandene = new Set(this.foods.map(f => f.category));
+  this.categories = this.categories.filter(c => vorhandene.has(c));
+  this.activeCategories = new Set(this.categories);
   }
 
    // Gibt die aktuell ausgewählte Jahreszeit zurück

@@ -2,6 +2,16 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.13.
 
+## Requirements 
+
+- Node.js (LTS recommended)
+- npm (included with Node.js)
+- Angular CLI (optional, recommended)
+
+Install Angular CLI globally:
+```bash
+npm install -g @angular/cli
+
 ## Development server
 
 To start a local development server, run:

@@ -1,63 +1,63 @@
-<h2>
-    Lebensmittel hinzufügen
-</h2>
+<h2>{{ isEditMode ? 'Lebensmittel bearbeiten' : 'Lebensmittel hinzufügen' }}</h2>
 
+<mat-card class="form">
 
-<div class="form">
-    <input placeholder="Lebensmittel" [(ngModel)]="searchText" (ngModelChange)="onSearch()">
+    <!-- Suche -->
+    <mat-form-field appearance="outline">
+        <mat-label>Lebensmittel</mat-label>
 
+        <input matInput [(ngModel)]="searchText" name="searchText" required (ngModelChange)="onSearch()" />
+    </mat-form-field>
 
     @if(filteredFoods.length > 0) {
-
-    <div class="search-results">
+    <mat-card class="search-results">
         @for(food of filteredFoods; track food.id) {
-        <button type="button" (click)="selectFood(food)">
+        <button mat-button type="button" (click)="selectFood(food)">
             {{ food.name }}
         </button>
         }
-    </div>
+    </mat-card>
     }
 
+    <!-- Menge -->
+    <mat-form-field appearance="outline">
+        <mat-label>Menge</mat-label>
+        <input matInput type="number" [(ngModel)]="quantity" min="1" step="1" />
+    </mat-form-field>
 
-    <input type="number" placeholder="Menge" [(ngModel)]="quantity">
+    <!-- Einheit -->
+    <mat-form-field appearance="outline">
+        <mat-label>Einheit</mat-label>
 
-    <select [(ngModel)]="unit">
-        <option value="Stück">
-            Stück
-        </option>
+        <mat-select [(ngModel)]="unit">
+            <mat-option value="Stück">Stück</mat-option>
+            <mat-option value="g">Gramm</mat-option>
+            <mat-option value="kg">Kilogramm</mat-option>
+            <mat-option value="ml">Milliliter</mat-option>
+            <mat-option value="l">Liter</mat-option>
+        </mat-select>
+    </mat-form-field>
 
-        <option value="g">
-            Gramm
-        </option>
-
-        <option value="kg">
-            Kilogramm
-        </option>
-
-        <option value="ml">
-            Milliliter
-        </option>
-
-        <option value="l">
-            Liter
-        </option>
-    </select>
-
+    <!-- Datum -->
     <mat-form-field appearance="outline">
         <mat-label>Einlagerungsdatum</mat-label>
+
         <input matInput [matDatepicker]="picker" [(ngModel)]="restockDate">
-        <mat-datepicker-toggle matIconSuffix [for]="picker">
-        </mat-datepicker-toggle>
+
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
-    <div>
-        <button (click)="cancel()">
+
+    <!-- Buttons -->
+    <div class="actions">
+        <button mat-stroked-button type="button" (click)="cancel()">
             Abbrechen
         </button>
 
-        <button (click)="save()">
+        <button mat-raised-button color="primary" type="button" (click)="save()">
             Speichern
         </button>
     </div>
-</div>
+
+</mat-card>

@@ -1,7 +1,7 @@
-<body class="home">
-  <div class="home-main">
+<div class="home-container">
+  <main class="home-main">
     <article class="welcome">
-      <h1 class="welcome-header">Herzlich Willkommen!</h1>
+      <h2 class="welcome-header">Herzlich Willkommen!</h2>
       <p class="welcome-text">
         Willkommen auf deiner Plattform für bewussten Lebensmittelkonsum!<br>
         Hier erfährst du auf einen Blick, welche Lebensmittel aktuell Saison haben und kannst deine
@@ -16,7 +16,7 @@
     </article>
 
     <article class="motivation">
-      <h1 class="motivation-header">Warum saisonale Lebensmittel?</h1>
+      <h2 class="motivation-header">Warum saisonale Lebensmittel?</h2>
       <p class="motivation-text">
         Saisonale Lebensmittel bewusst zu wählen bedeutet mehr als nur frische Zutaten einzukaufen –
         es ist ein aktiver Beitrag zu einem nachhaltigeren Umgang mit unseren Ressourcen. Obst und
@@ -34,44 +34,50 @@
       </p>
     </article>
 
+    <!-- Vorschau von 3 zufälligen, aktuell saisonalen Lebensmitteln: -->
     <div class="seasonal-food-preview">
-      <h1>Was hat gerade Saison?</h1>
+      <h2 class="seasonal-food-preview-header">Was hat gerade Saison?</h2>
       <div class="seasonal-food-preview-card-container">
         @for (food of previewFoods; track food.id) {
           <app-food-preview-card [foodName]=food.name [imageUrl]=food.imageUrl [previewText]=food.previewText></app-food-preview-card>
         }
       </div>
     </div>
-  </div>
+  </main>
 
-
-  <div class="pantry-preview">
+  <!-- Vorratskammer-Vorschau auf der rechten Seite: -->
+  <aside class="pantry-preview">
     <header class="pantry-preview-header-container">
-      <h1 class="pantry-preview-header">Meine Vorräte:</h1>
+      <h2 class="pantry-preview-header">Meine Vorräte:</h2>
       <p class="pantry-preview-text">
         Diese Lebensmittel aus deiner Vorratskammer sollten bald verwertet werden, da sie demnächst ablaufen:
       </p>
     </header>
 
-    <!-- TODO: Vorratsliste laden und bald ablaufende Lebensmittel filtern. Einzelne Elemente in der Liste als Component? -->
-    <div class="pantry-preview-list-container">
-      <ul>
-        <li>Lebensmittel 1</li>
-        <li>Lebensmittel 2</li>
-        <li>Lebensmittel 3</li>
-        <li>Lebensmittel 4</li>
-      </ul>
+    <!-- Liste der bald ablaufenden Lebensmittel: -->
+    <div class="pantry-preview-card-list-container">
+      @if (expiringPantryItems.length > 0) {
+        @for (item of expiringPantryItems; track item.id) {
+          <app-pantry-preview-card [pantryItemName]=item.food.name [expiryDate]=item.expiryDate ></app-pantry-preview-card>
+        }
+      } @else {
+        <app-pantry-preview-card [pantryItemName]="'Keine ablaufenden Lebensmittel vorhanden.'" ></app-pantry-preview-card>
+      }
     </div>
 
+    <!-- Pantry Preview Buttons: -->
     <div class="pantry-preview-button-container">
-      <!-- TODO: Button-Funktion implementieren (Einkäufe / Lebensmittel zur Vorratskammer hinzufügen) -->
-      <button class="add-purchases-button">
-        <span class="material-symbols-outlined">add_notes</span>
+
+      <button class="add-purchases-button" mat-raised-button (click)="openPantryDialog()">
+        <mat-icon>playlist_add</mat-icon>
+        Einkäufe hinzufügen
       </button>
-      <!-- TODO: Button-Funktion implementieren (Navigation zur Vorratskammer) -->
-      <button class="pantry-list-button">
-        <span class="material-symbols-outlined">list</span>
-      </button>
+
+      <a class="pantry-list-link-button" mat-raised-button routerLink="/pantry" >
+        <mat-icon>list</mat-icon>
+        Zur Vorratskammer
+      </a>
+
     </div>
-  </div>
-</body>
+  </aside>
+</div>

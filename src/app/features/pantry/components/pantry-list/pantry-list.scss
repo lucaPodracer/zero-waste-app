@@ -1,0 +1,60 @@
+.pantry-table {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* HEADER */
+th.mat-header-cell {
+    font-weight: 600;
+    background: #fafafa;
+}
+
+/* CELLS */
+td.mat-cell {
+    padding: 10px 12px;
+}
+
+/* EXPIRY COLORS */
+.expiry.ok {
+    color: #2e7d32;
+}
+
+.expiry.warning {
+    color: #f9a825;
+}
+
+.expiry.critical {
+    color: #d84315;
+}
+
+.expiry.expired {
+    color: #b71c1c;
+}
+
+.hint {
+    font-size: 0.75rem;
+    color: #777;
+}
+
+/* ACTION BUTTONS */
+button {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: #f1f1f1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #e0e0e0;
+}
+
+button:last-child {
+    color: #c62828;
+}

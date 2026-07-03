@@ -3,11 +3,18 @@
     "id": 1,
     "name": "Apfel",
     "category": "Obst",
+    "description": "Äpfel sind vielseitig und bei richtiger Lagerung lange haltbar.",
     "seasonMonths": [8, 9, 10, 11],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 28,
     "imageUrl": "assets/images/food/apple.jpg",
-    "previewText": "Frisch, knackig und voller Geschmack – Äpfel liefern wertvolle Vitamine, sind leicht, gesund und der perfekte Snack für zwischendurch."
+    "previewText": "Frisch, knackig und voller Geschmack – Äpfel liefern wertvolle Vitamine, sind leicht, gesund und der perfekte Snack für zwischendurch.",
+    "zeroWasteTips": [
+      "Schale mitessen – sie enthält viele Nährstoffe.",
+      "Angeschnittene Äpfel mit Zitronensaft beträufeln.",
+      "Überreife Äpfel zu Apfelmus oder Smoothies verarbeiten."
+    ],
+    "uses": ["Apfelmus", "Smoothie", "Apfelkuchen", "Getrocknete Apfelringe"]
   },
   {
     "id": 2,
@@ -17,7 +24,14 @@
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 14,
     "imageUrl": "assets/images/food/pear.jpg",
-    "previewText": "Birnen haben jetzt Saison: saftig, mild und herrlich aromatisch – ein feiner Snack für jeden Tag."
+    "previewText": "Birnen haben jetzt Saison: saftig, mild und herrlich aromatisch – ein feiner Snack für jeden Tag.",
+    "description": "Birnen sind saftig und süß. Sie eignen sich als Snack oder für Desserts.",
+    "uses": ["Birnenkuchen", "Obstsalat", "Smoothie", "Birnenkompott"],
+    "zeroWasteTips": [
+      "Reife Birnen zu Kompott verarbeiten.",
+      "Für Smoothies oder Marmelade verwenden.",
+      "Angeschnittene Birnen mit Zitronensaft beträufeln."
+    ]
   },
   {
     "id": 3,
@@ -27,7 +41,14 @@
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 3,
     "imageUrl": "assets/images/food/strawberries.jpg",
-    "previewText": "Es ist Erdbeerzeit: süß, saftig und voller Vitamine – der perfekte Sommergenuss für zwischendurch."
+    "previewText": "Es ist Erdbeerzeit: süß, saftig und voller Vitamine – der perfekte Sommergenuss für zwischendurch.",
+    "description": "Erdbeeren sind süß und besonders im Frühsommer beliebt.",
+    "uses": ["Marmelade", "Smoothie", "Kuchen", "Dessert"],
+    "zeroWasteTips": [
+      "Reife Erdbeeren einfrieren.",
+      "Zu Marmelade verarbeiten.",
+      "Beschädigte Stellen entfernen statt die ganze Frucht wegzuwerfen."
+    ]
   },
   {
     "id": 4,
@@ -37,7 +58,14 @@
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 3,
     "imageUrl": "assets/images/food/raspberries.jpg",
-    "previewText": "Himbeeren haben jetzt Saison: fein, fruchtig und ideal für einen leichten Genuss im Sommer."
+    "previewText": "Himbeeren haben jetzt Saison: fein, fruchtig und ideal für einen leichten Genuss im Sommer.",
+    "description": "Himbeeren sind empfindlich und sollten schnell verbraucht werden.",
+    "uses": ["Smoothie", "Dessert", "Marmelade", "Joghurt"],
+    "zeroWasteTips": [
+      "Direkt nach dem Kauf verbrauchen.",
+      "Übrig gebliebene Himbeeren einfrieren.",
+      "Zu Fruchtsoße pürieren."
+    ]
   },
   {
     "id": 5,
@@ -47,7 +75,14 @@
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 7,
     "imageUrl": "assets/images/food/blueberries.jpg",
-    "previewText": "Heidelbeeren sind jetzt in Saison: klein, aromatisch und voller fruchtigem Geschmack."
+    "previewText": "Heidelbeeren sind jetzt in Saison: klein, aromatisch und voller fruchtigem Geschmack.",
+    "description": "Heidelbeeren sind vitaminreich und vielseitig verwendbar.",
+    "uses": ["Müsli", "Smoothie", "Muffins", "Pfannkuchen"],
+    "zeroWasteTips": [
+      "Vor dem Verzehr waschen.",
+      "Überreife Beeren einfrieren.",
+      "Für Muffins oder Kuchen verwenden."
+    ]
   },
   {
     "id": 6,
@@ -57,7 +92,14 @@
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 4,
     "imageUrl": "assets/images/food/cherries.jpg",
-    "previewText": "Kirschen begeistern mit süßem Aroma, liefern wertvolle Antioxidantien und sind der perfekte Snack für warme Tage."
+    "previewText": "Kirschen begeistern mit süßem Aroma, liefern wertvolle Antioxidantien und sind der perfekte Snack für warme Tage.",
+    "description": "Kirschen schmecken frisch und eignen sich gut zum Backen.",
+    "uses": ["Kirschkuchen", "Marmelade", "Dessert", "Smoothie"],
+    "zeroWasteTips": [
+      "Überschüssige Kirschen einfrieren.",
+      "Zu Marmelade verarbeiten.",
+      "Kerne zum Basteln oder Wärmekissen nutzen."
+    ]
   },
   {
     "id": 7,
@@ -67,7 +109,14 @@
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 7,
     "imageUrl": "assets/images/food/plums.jpg",
-    "previewText": "Pflaumen haben jetzt Saison: saftig, süß-säuerlich und wunderbar aromatisch."
+    "previewText": "Pflaumen haben jetzt Saison: saftig, süß-säuerlich und wunderbar aromatisch.",
+    "description": "Pflaumen eignen sich gut zum Backen und Einkochen.",
+    "uses": ["Pflaumenkuchen", "Mus", "Marmelade", "Kompott"],
+    "zeroWasteTips": [
+      "Sehr reife Pflaumen einkochen.",
+      "Zu Mus verarbeiten.",
+      "Einfrieren für später."
+    ]
   },
   {
     "id": 8,
@@ -77,7 +126,14 @@
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 7,
     "imageUrl": "assets/images/food/grapes.jpg",
-    "previewText": "Trauben sind jetzt saisonal besonders lecker: süß, frisch und perfekt zum Naschen."
+    "previewText": "Trauben sind jetzt saisonal besonders lecker: süß, frisch und perfekt zum Naschen.",
+    "description": "Trauben sind ein beliebter Snack und reich an Vitaminen.",
+    "uses": ["Obstsalat", "Snack", "Saft", "Smoothie"],
+    "zeroWasteTips": [
+      "Trauben einfrieren.",
+      "Zu Saft verarbeiten.",
+      "Überreife Trauben im Smoothie verwenden."
+    ]
   },
   {
     "id": 9,
@@ -87,7 +143,14 @@
     "storage": "Zimmertemperatur",
     "averageShelfLifeDays": 7,
     "imageUrl": "assets/images/food/bananas.jpg",
-    "previewText": "Bananen sind das ganze Jahr verfügbar: praktisch, cremig und ideal als schneller Energiespender."
+    "previewText": "Bananen sind das ganze Jahr verfügbar: praktisch, cremig und ideal als schneller Energiespender.",
+    "description": "Bananen sind das ganze Jahr erhältlich und vielseitig einsetzbar.",
+    "uses": ["Bananenbrot", "Smoothie", "Milchshake", "Dessert"],
+    "zeroWasteTips": [
+      "Braune Bananen für Bananenbrot nutzen.",
+      "Geschälte Bananen einfrieren.",
+      "Zu Smoothies verarbeiten."
+    ]
   },
   {
     "id": 10,
@@ -97,7 +160,14 @@
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 14,
     "imageUrl": "assets/images/food/kiwis.jpg",
-    "previewText": "Kiwi hat jetzt Saison: frisch, fruchtig und angenehm exotisch im Geschmack."
+    "previewText": "Kiwi hat jetzt Saison: frisch, fruchtig und angenehm exotisch im Geschmack.",
+    "description": "Kiwis enthalten viel Vitamin C und bleiben lange frisch.",
+    "uses": ["Obstsalat", "Smoothie", "Dessert", "Müsli"],
+    "zeroWasteTips": [
+      "Reife Kiwis rechtzeitig verbrauchen.",
+      "Zu Smoothies verarbeiten.",
+      "Überreife Früchte zu Marmelade verarbeiten."
+    ]
   },
   {
     "id": 11,
@@ -271,6 +341,7 @@
     "seasonMonths": [9, 10, 11, 0, 1],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 4,
+    "imageUrl": "assets/images/food/lambs_lettuce.jpg",
     "previewText": "Feldsalat hat jetzt Saison: fein, aromatisch und perfekt für herbstliche und winterliche Salate."
   },
   {
@@ -317,6 +388,7 @@
     "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/white_mushrooms.jpg",
     "previewText": "Champignons sind das ganze Jahr verfügbar: mild, aromatisch und vielseitig in der Küche."
   },
   {
@@ -326,6 +398,7 @@
     "seasonMonths": [3, 4, 5],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 4,
+    "imageUrl": "assets/images/food/green_asparagus.jpg",
     "previewText": "Grüner Spargel hat jetzt Saison: zart, aromatisch und ein echter Frühlingsklassiker."
   },
   {
@@ -354,6 +427,7 @@
     "seasonMonths": [8, 9, 10, 11, 0, 1],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 14,
+    "imageUrl": "assets/images/food/savoy.jpg",
     "previewText": "Wirsing ist jetzt saisonal besonders gut: herzhaft, vielseitig und voller Geschmack."
   },
   {
@@ -373,6 +447,7 @@
     "seasonMonths": [4, 5, 6, 7, 8],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 10,
+    "imageUrl": "assets/images/food/pointed_cabbage.jpg",
     "previewText": "Spitzkohl ist jetzt in Saison: mild, zart und ideal für leichte Gerichte."
   },
   {
@@ -382,6 +457,7 @@
     "seasonMonths": [8, 9, 10, 11, 0],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 21,
+    "imageUrl": "assets/images/food/red_cabbage.jpg",
     "previewText": "Rotkohl hat jetzt Saison: kräftig im Geschmack, farbintensiv und vielseitig einsetzbar."
   },
   {
@@ -391,6 +467,7 @@
     "seasonMonths": [8, 9, 10, 11, 0],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 21,
+    "imageUrl": "assets/images/food/white_cabbage.jpg",
     "previewText": "Weißkohl ist jetzt in Saison: knackig, mild und perfekt für deftige wie leichte Gerichte."
   },
   {
@@ -409,6 +486,7 @@
     "seasonMonths": [9, 10, 11, 0, 1, 2],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 21,
+    "imageUrl": "assets/images/food/parsnips.jpg",
     "previewText": "Pastinaken sind jetzt saisonal besonders gut: fein süßlich, aromatisch und wärmend in der Küche."
   },
   {
@@ -454,6 +532,7 @@
     "seasonMonths": [10, 11, 0, 1, 2],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 10,
+    "imageUrl": "assets/images/food/chicory.jpg",
     "previewText": "Chicorée hat jetzt Saison: fein bitter, frisch und ideal für herzhafte Salate."
   },
   {
@@ -481,6 +560,7 @@
     "seasonMonths": [3, 4, 5],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/rhubarb.jpg",
     "previewText": "Rhabarber hat jetzt Saison: frisch, säuerlich und ideal für Desserts und Kuchen."
   },
   {
@@ -520,6 +600,7 @@
     "seasonMonths": [7, 8],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/mirabelle.jpg",
     "previewText": "Mirabellen sind jetzt saisonal frisch: klein, süß und voller feinem Aroma."
   },
   {
@@ -549,6 +630,7 @@
     "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "storage": "Zimmertemperatur",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/mango.jpg",
     "previewText": "Mango ist das ganze Jahr verfügbar: exotisch, saftig und herrlich süß."
   },
   {
@@ -567,6 +649,7 @@
     "seasonMonths": [5, 6, 7, 8],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/watermelon.jpg",
     "previewText": "Wassermelone ist jetzt in Saison: erfrischend, saftig und perfekt für warme Tage."
   },
   {
@@ -576,6 +659,7 @@
     "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "storage": "Zimmertemperatur",
     "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/pineapple.jpg",
     "previewText": "Ananas ist das ganze Jahr verfügbar: exotisch, süß-säuerlich und intensiv im Geschmack."
   },
   {
@@ -585,6 +669,7 @@
     "seasonMonths": [11, 0, 1, 2, 3],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 21,
+    "imageUrl": "assets/images/food/grapefruit.jpg",
     "previewText": "Grapefruit hat jetzt Saison: frisch, leicht bitter und herrlich belebend."
   },
   {
@@ -594,6 +679,7 @@
     "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 21,
+    "imageUrl": "assets/images/food/limes.jpg",
     "previewText": "Limetten sind das ganze Jahr verfügbar: frisch, spritzig und perfekt zum Verfeinern."
   },
   {
@@ -648,6 +734,7 @@
     "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 30,
+    "imageUrl": "assets/images/food/ginger.jpg",
     "previewText": "Ingwer ist das ganze Jahr verfügbar: würzig, aromatisch und angenehm belebend."
   },
   {

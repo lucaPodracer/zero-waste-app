@@ -25,3 +25,24 @@
 .food-content {
     padding: 16px;
 }
+
+.detail-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4caf6e;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s;
+  width: 100%;
+  justify-content: center;
+
+  &:hover {
+    background: #3a9e5c;
+  }
+}

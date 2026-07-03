@@ -22,7 +22,7 @@ export class FoodList implements OnInit {
     this.foods = this.foodService.getFoods();
   }
 
-   goToDetail(id: number) {
+   goToDetail(id: number|string) {
     this.router.navigate(['/food-details', id]);      //wichtig für route, damit man auf die food details seite kommt 
   }
 }

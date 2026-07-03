@@ -10,6 +10,7 @@ html {
   @include mat.theme(
     (
       color: (
+        // TODO: Main-Theme Farbe auf grün ändern?
         primary: mat.$azure-palette,
         tertiary: mat.$blue-palette,
       ),

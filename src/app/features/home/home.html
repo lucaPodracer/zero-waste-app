@@ -1,7 +1,7 @@
-<body class="home">
-  <div class="home-main">
+<div class="home-container">
+  <main class="home-main">
     <article class="welcome">
-      <h1 class="welcome-header">Herzlich Willkommen!</h1>
+      <h2 class="welcome-header">Herzlich Willkommen!</h2>
       <p class="welcome-text">
         Willkommen auf deiner Plattform für bewussten Lebensmittelkonsum!<br>
         Hier erfährst du auf einen Blick, welche Lebensmittel aktuell Saison haben und kannst deine
@@ -16,7 +16,7 @@
     </article>
 
     <article class="motivation">
-      <h1 class="motivation-header">Warum saisonale Lebensmittel?</h1>
+      <h2 class="motivation-header">Warum saisonale Lebensmittel?</h2>
       <p class="motivation-text">
         Saisonale Lebensmittel bewusst zu wählen bedeutet mehr als nur frische Zutaten einzukaufen –
         es ist ein aktiver Beitrag zu einem nachhaltigeren Umgang mit unseren Ressourcen. Obst und
@@ -36,19 +36,19 @@
 
     <!-- Vorschau von 3 zufälligen, aktuell saisonalen Lebensmitteln: -->
     <div class="seasonal-food-preview">
-      <h1 class="seasonal-food-preview-header">Was hat gerade Saison?</h1>
+      <h2 class="seasonal-food-preview-header">Was hat gerade Saison?</h2>
       <div class="seasonal-food-preview-card-container">
         @for (food of previewFoods; track food.id) {
           <app-food-preview-card [foodName]=food.name [imageUrl]=food.imageUrl [previewText]=food.previewText></app-food-preview-card>
         }
       </div>
     </div>
-  </div>
+  </main>
 
   <!-- Vorratskammer-Vorschau auf der rechten Seite: -->
-  <div class="pantry-preview">
+  <aside class="pantry-preview">
     <header class="pantry-preview-header-container">
-      <h1 class="pantry-preview-header">Meine Vorräte:</h1>
+      <h2 class="pantry-preview-header">Meine Vorräte:</h2>
       <p class="pantry-preview-text">
         Diese Lebensmittel aus deiner Vorratskammer sollten bald verwertet werden, da sie demnächst ablaufen:
       </p>
@@ -79,5 +79,5 @@
       </a>
 
     </div>
-  </div>
-</body>
+  </aside>
+</div>

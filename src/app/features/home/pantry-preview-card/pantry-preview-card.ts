@@ -11,7 +11,6 @@ import { DatePipe } from '@angular/common';
   styleUrl: './pantry-preview-card.scss',
 })
 export class PantryPreviewCard {
-  // TODO: Noch ein Bild oder Icon mit anzeigen?
   @Input() pantryItemName: string = '';
   @Input() expiryDate?: Date;
 }

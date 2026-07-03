@@ -1,14 +1,18 @@
 <div class="food-preview-card-container">
-  <div class="food-preview-card-image-container">
-    <img class="food-preview-card-image" [src]="imageUrl ?? 'assets/images/food/placeholder.png'" [alt]="foodName">
-  </div>
-  <div class="food-preview-card-text-container">
-    <h1 class="food-preview-card-text-header">{{ foodName }}</h1>
+  <picture class="food-preview-card-image-container">
+    @if (imageUrl) {
+      <img class="food-preview-card-image" [src]=imageUrl [alt]=foodName>
+    } @else {
+      <img class="food-preview-card-image" [src]="'assets/images/food/placeholder.png'" [alt]="'Platzhalter Bild'">
+    }
+  </picture>
+  <article class="food-preview-card-text-container">
+    <h3 class="food-preview-card-text-header">{{ foodName }}</h3>
     @if (previewText) {
       <p class="food-preview-card-text">{{ previewText }}</p>
     }
     @else {
       <p class="food-preview-card-text-missing">Für dieses Lebensmittel ist leider noch keine Beschreibung vorhanden.</p>
     }
-  </div>
+  </article>
 </div>

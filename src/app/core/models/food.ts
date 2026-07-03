@@ -11,6 +11,8 @@ export interface Food {
   description?: string;
   zeroWasteTips?: string[];
   uses?: string[];
+
+  previewText?: string;
 }
 
 export type FoodCategory =

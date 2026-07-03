@@ -13,6 +13,11 @@
             <p><strong>Saison: </strong> {{ food.seasonMonths.join(', ') }} </p>
             <p *ngIf="food.storage"> <strong>Lagerung: </strong> {{ food.storage }}</p>
             <p *ngIf="food.averageShelfLifeDays"> <strong>Durchschnittliche Lagerdauer: </strong> {{ food.averageShelfLifeDays}} </p>
+
+             <button class="detail-btn" (click)="goToDetail(food.id)">   <!-- Button für Details -->
+        <span class="material-symbols-outlined">arrow_forward</span>
+        Details
+      </button>
         </div>
 
     </div>

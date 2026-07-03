@@ -1,1 +1,83 @@
-<p>food-details works!</p>
+<div class="detail-page">
+
+<!--Button erstellt für zurück zur Übersicht-->
+  <button class="back-btn" (click)="goBack()">
+    <span class="material-symbols-outlined">arrow_back</span>
+    Zurück zur Übersicht
+  </button>
+
+  <div *ngIf="food; else notFound">
+
+    <div class="main-card">
+      <div class="image-wrap">
+        <img
+          [src]="food.imageUrl || 'assets/images/food/placeholder.png'"
+          [alt]="food.name" />
+      </div>
+
+      <!--Name des Lebensmittels und Kategorie-->
+      <div class="info">
+        <div class="name-row">
+          <h1>{{ food.name }}</h1>
+          <span class="category-badge">{{ food.category }}</span>
+        </div>
+
+        <p class="description" *ngIf="food.description">{{ food.description }}</p>
+
+        <!--Weitere Infos vom Lebensmittel-->
+        <div class="meta-list">
+          <div class="meta-row">
+            <span class="material-symbols-outlined meta-icon">calendar_month</span>
+            <span class="meta-label">Saison</span>
+            <span class="meta-value">{{ seasonRange }}</span>
+          </div>
+          <div class="meta-row" *ngIf="food.storage">
+            <span class="material-symbols-outlined meta-icon">kitchen</span>
+            <span class="meta-label">Lagerung</span>
+            <span class="meta-value">{{ food.storage }}</span>
+          </div>
+          <div class="meta-row" *ngIf="food.averageShelfLifeDays">
+            <span class="material-symbols-outlined meta-icon">timer</span>
+            <span class="meta-label">Durchschnittliche Lagerdauer</span>
+            <span class="meta-value">{{ food.averageShelfLifeDays }} Tage</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Karte von den Tipps-->
+    <div class="bottom-cards">
+      <div class="card" *ngIf="food.zeroWasteTips && food.zeroWasteTips.length > 0">
+        <div class="card-header">
+          <span class="card-icon green">
+            <span class="material-symbols-outlined">eco</span>
+          </span>
+          <h2>Tipps für weniger Lebensmittelverschwendung</h2>
+        </div>
+        <ul>
+          <li *ngFor="let tip of food.zeroWasteTips">{{ tip }}</li>
+        </ul>
+      </div>
+
+     <!--Karte von Verwendungsideen--> 
+      <div class="card" *ngIf="food.uses && food.uses.length > 0">
+        <div class="card-header">
+          <span class="card-icon green">
+            <span class="material-symbols-outlined">restaurant</span>
+          </span>
+          <h2>Was du daraus machen kannst</h2>
+        </div>
+        <ul>
+          <li *ngFor="let use of food.uses">{{ use }}</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!--es wird einen alternativ Inhalt angezeigt, falls food nicht gefunden ist-->
+  <ng-template #notFound>
+    <p class="not-found">Lebensmittel nicht gefunden.</p>
+  </ng-template>
+
+</div>

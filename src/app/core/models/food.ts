@@ -7,7 +7,10 @@ export interface Food {
   storage?: string;
   averageShelfLifeDays?: number;
   imageUrl?: string;
-  previewText?: string;
+
+  description?: string;
+  zeroWasteTips?: string[];
+  uses?: string[];
 }
 
 export type FoodCategory =

@@ -271,6 +271,7 @@
     "seasonMonths": [9, 10, 11, 0, 1],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 4,
+    "imageUrl": "assets/images/food/lambs_lettuce.jpg",
     "previewText": "Feldsalat hat jetzt Saison: fein, aromatisch und perfekt für herbstliche und winterliche Salate."
   },
   {
@@ -317,6 +318,7 @@
     "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/white_mushrooms.jpg",
     "previewText": "Champignons sind das ganze Jahr verfügbar: mild, aromatisch und vielseitig in der Küche."
   },
   {
@@ -326,6 +328,7 @@
     "seasonMonths": [3, 4, 5],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 4,
+    "imageUrl": "assets/images/food/green_asparagus.jpg",
     "previewText": "Grüner Spargel hat jetzt Saison: zart, aromatisch und ein echter Frühlingsklassiker."
   },
   {
@@ -354,6 +357,7 @@
     "seasonMonths": [8, 9, 10, 11, 0, 1],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 14,
+    "imageUrl": "assets/images/food/savoy.jpg",
     "previewText": "Wirsing ist jetzt saisonal besonders gut: herzhaft, vielseitig und voller Geschmack."
   },
   {
@@ -373,6 +377,7 @@
     "seasonMonths": [4, 5, 6, 7, 8],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 10,
+    "imageUrl": "assets/images/food/pointed_cabbage.jpg",
     "previewText": "Spitzkohl ist jetzt in Saison: mild, zart und ideal für leichte Gerichte."
   },
   {
@@ -382,6 +387,7 @@
     "seasonMonths": [8, 9, 10, 11, 0],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 21,
+    "imageUrl": "assets/images/food/red_cabbage.jpg",
     "previewText": "Rotkohl hat jetzt Saison: kräftig im Geschmack, farbintensiv und vielseitig einsetzbar."
   },
   {
@@ -391,6 +397,7 @@
     "seasonMonths": [8, 9, 10, 11, 0],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 21,
+    "imageUrl": "assets/images/food/white_cabbage.jpg",
     "previewText": "Weißkohl ist jetzt in Saison: knackig, mild und perfekt für deftige wie leichte Gerichte."
   },
   {
@@ -409,6 +416,7 @@
     "seasonMonths": [9, 10, 11, 0, 1, 2],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 21,
+    "imageUrl": "assets/images/food/parsnips.jpg",
     "previewText": "Pastinaken sind jetzt saisonal besonders gut: fein süßlich, aromatisch und wärmend in der Küche."
   },
   {
@@ -454,6 +462,7 @@
     "seasonMonths": [10, 11, 0, 1, 2],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 10,
+    "imageUrl": "assets/images/food/chicory.jpg",
     "previewText": "Chicorée hat jetzt Saison: fein bitter, frisch und ideal für herzhafte Salate."
   },
   {
@@ -481,6 +490,7 @@
     "seasonMonths": [3, 4, 5],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/rhubarb.jpg",
     "previewText": "Rhabarber hat jetzt Saison: frisch, säuerlich und ideal für Desserts und Kuchen."
   },
   {
@@ -520,6 +530,7 @@
     "seasonMonths": [7, 8],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/mirabelle.jpg",
     "previewText": "Mirabellen sind jetzt saisonal frisch: klein, süß und voller feinem Aroma."
   },
   {
@@ -549,6 +560,7 @@
     "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "storage": "Zimmertemperatur",
     "averageShelfLifeDays": 7,
+    "imageUrl": "assets/images/food/mango.jpg",
     "previewText": "Mango ist das ganze Jahr verfügbar: exotisch, saftig und herrlich süß."
   },
   {
@@ -567,6 +579,7 @@
     "seasonMonths": [5, 6, 7, 8],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/watermelon.jpg",
     "previewText": "Wassermelone ist jetzt in Saison: erfrischend, saftig und perfekt für warme Tage."
   },
   {
@@ -576,6 +589,7 @@
     "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "storage": "Zimmertemperatur",
     "averageShelfLifeDays": 5,
+    "imageUrl": "assets/images/food/pineapple.jpg",
     "previewText": "Ananas ist das ganze Jahr verfügbar: exotisch, süß-säuerlich und intensiv im Geschmack."
   },
   {
@@ -585,6 +599,7 @@
     "seasonMonths": [11, 0, 1, 2, 3],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 21,
+    "imageUrl": "assets/images/food/grapefruit.jpg",
     "previewText": "Grapefruit hat jetzt Saison: frisch, leicht bitter und herrlich belebend."
   },
   {
@@ -594,6 +609,7 @@
     "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 21,
+    "imageUrl": "assets/images/food/limes.jpg",
     "previewText": "Limetten sind das ganze Jahr verfügbar: frisch, spritzig und perfekt zum Verfeinern."
   },
   {
@@ -648,6 +664,7 @@
     "seasonMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "storage": "Kühlschrank",
     "averageShelfLifeDays": 30,
+    "imageUrl": "assets/images/food/ginger.jpg",
     "previewText": "Ingwer ist das ganze Jahr verfügbar: würzig, aromatisch und angenehm belebend."
   },
   {

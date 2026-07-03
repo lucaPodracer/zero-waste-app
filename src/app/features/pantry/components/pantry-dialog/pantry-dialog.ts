@@ -70,6 +70,7 @@ export class PantryDialog {
       this.searchText = this.data.food.name;
       this.quantity = this.data.quantity;
       this.unit = this.data.unit;
+
       this.restockDate = this.data.restockDate;
       this.expiryDate = this.data.expiryDate;
     }

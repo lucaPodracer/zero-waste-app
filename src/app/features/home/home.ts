@@ -1,4 +1,4 @@
-import { Component, inject, OnInit, Signal, SimpleChanges } from '@angular/core';
+import { Component, inject, OnInit, Signal } from '@angular/core';
 import { FoodPreviewCard } from './food-preview-card/food-preview-card';
 import { Food } from '../../core/models/food';
 import { FoodService } from '../../core/services/food-service';
@@ -42,7 +42,7 @@ export class Home implements OnInit {
     // Zufällige saisonale Lebensmittel für die Vorschau ermitteln und sicherstellen, dass keins doppelt vorkommt
     const randomIndices = [...Array(this.seasonalFoods.length).keys()]
       .sort(() => Math.random() - 0.5)
-      .slice(0, 4); // insgesamt 3 Elemente
+      .slice(0, 3); // insgesamt 3 Elemente
 
     for (const index of randomIndices) {
       this.previewFoods.push(this.seasonalFoods[index]);

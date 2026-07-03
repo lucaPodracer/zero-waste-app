@@ -1,25 +1,33 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #4caf50;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #4caf50;
+  color: white;
 }
 
-logo {
-    justify-content: left;
+.header-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
 nav {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 1rem;
+
+  // Bei Smartphones Navigations-Links untereinander anordnen:
+  @media (max-width: 48rem) {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 a {
-    color: white;
+  color: white;
 }
 
 .icon {
-    font-size: 40px;
+  font-size: 4rem;
 }

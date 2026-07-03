@@ -18,9 +18,7 @@
   vertical-align: middle;
 }
 
-.icon-small {
-  font-size: 18px;
-}
+.icon-small { font-size: 18px; }
 
 .calendar {
   max-width: 1300px;
@@ -37,11 +35,7 @@
     display: flex;
     gap: 12px;
     align-items: flex-start;
-
-    .leaf {
-      font-size: 28px;
-      color: var(--green);
-    }
+    .leaf { font-size: 28px; color: var(--green); }
     h1 { margin: 0; font-size: 1.6rem; }
     p { margin: 2px 0 0; color: var(--muted); }
   }
@@ -49,7 +43,6 @@
   .nav {
     display: flex;
     gap: 8px;
-
     button {
       display: flex;
       align-items: center;
@@ -60,7 +53,6 @@
       padding: 8px 14px;
       cursor: pointer;
       font-size: 0.95rem;
-
       &:hover { background: #f1f1f1; }
     }
     .arrow { width: 38px; justify-content: center; padding: 8px 0; }
@@ -69,7 +61,7 @@
 
 .season-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 14px;
   margin-bottom: 20px;
 
@@ -92,30 +84,36 @@
       border-color: var(--accent);
       box-shadow: 0 0 0 2px rgba(242, 169, 59, 0.25);
     }
-
     &:hover { border-color: #c9c3b5; }
   }
 }
 
 .content {
   display: grid;
-  grid-template-columns: 1fr 280px;
+  grid-template-columns: minmax(0, 1fr) 280px;
   gap: 20px;
   align-items: start;
+}
+
+// ← Wrapper für horizontales Scrollen
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  -webkit-overflow-scrolling: touch; // ← sanftes Scrollen auf iOS
 }
 
 .season-table {
   width: 100%;
   border-collapse: collapse;
   background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  overflow: hidden;
+  table-layout: fixed; // ← gleichmäßige Spaltenbreiten
 
   th, td {
     border: 1px solid var(--border);
     padding: 10px;
     vertical-align: top;
+    word-break: break-word;
   }
 
   thead th {
@@ -124,15 +122,27 @@
     font-weight: 700;
   }
 
+  // erste Spalte feste Breite, Rest teilt sich gleichmäßig auf
+  th:first-child,
+  td:first-child {
+    width: 120px;
+  }
+
   .corner { background: var(--card-bg); }
 
   .category-label {
     text-align: left;
-    white-space: nowrap;
+    white-space: normal; 
     background: #fafafa;
     font-weight: 600;
+    font-size: 0.85rem;
 
-    .category-icon { margin-right: 6px; }
+    .category-icon {
+      margin-right: 4px;
+      font-size: 16px;
+      display: block; // ← Icon über dem Text statt daneben
+      margin-bottom: 2px;
+    }
   }
 
   .item {
@@ -155,7 +165,6 @@
 
   .filter-panel {
     h2 { margin: 0 0 10px; font-size: 1rem; }
-
     label {
       display: flex;
       align-items: center;
@@ -169,7 +178,6 @@
   .info-box {
     background: #eef7ee;
     border-color: #d3ecd3;
-
     h3 {
       display: flex;
       align-items: center;
@@ -199,4 +207,27 @@
 @media (max-width: 900px) {
   .season-cards { grid-template-columns: repeat(2, 1fr); }
   .content { grid-template-columns: 1fr; }
+
+  .sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr; // ← nebeneinander unter der Tabelle
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  :host { padding: 12px; }
+
+  .head {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .season-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sidebar {
+    grid-template-columns: 1fr;
+  }
 }

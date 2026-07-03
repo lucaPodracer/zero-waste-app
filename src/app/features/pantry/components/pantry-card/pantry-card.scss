@@ -2,7 +2,7 @@
     border-radius: 16px;
     overflow: hidden;
     background: white;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .pantry-image {
@@ -17,4 +17,125 @@
 
 .pantry-content {
     padding: 16px;
+}
+
+.expiry {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 0.85rem;
+    color: #6b6b6b;
+}
+
+.days {
+    font-size: 0.75rem;
+    margin-top: 2px;
+}
+
+.ok {
+    color: green;
+}
+
+.warning {
+    color: orange;
+}
+
+.critical {
+    color: red;
+}
+
+.expired {
+    color: darkred;
+}
+
+.quantity-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.quantity {
+    margin: 0;
+}
+
+.quantity-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.quantity-controls button,
+.card-actions button {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.quantity-controls button:hover,
+.card-actions button:hover {
+    background: #e0e0e0;
+}
+
+.card-actions .danger {
+    color: #c62828;
+}
+
+.card-actions .danger:hover {
+    background: #fdecea;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 12px;
+}
+
+.expiry-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.days {
+    font-size: 0.75rem;
+    margin-top: 2px;
+}
+
+.expiry.ok .date,
+.expiry.ok .days {
+    color: green;
+}
+
+.expiry.warning .date,
+.expiry.warning .days {
+    color: orange;
+}
+
+.expiry.critical .date,
+.expiry.critical .days {
+    color: red;
+}
+
+.expiry.expired .date,
+.expiry.expired .days {
+    color: darkred;
 }

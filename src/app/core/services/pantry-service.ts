@@ -2,6 +2,8 @@ import { Injectable, signal } from '@angular/core';
 import { Food } from '../models/food';
 import { PantryItem, QuantityUnit } from '../models/pantry-item';
 
+export type ExpiryStatus = 'ok' | 'warning' | 'critical' | 'expired';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -43,26 +45,38 @@ export class PantryService {
     });
   }
 
-  updateQuantity(
-    id: string,
-    change: number
-  ) {
+  updateQuantity(id: string, change: number) {
     this.pantryItems.update(items => {
 
       const updatedItems = items.map(item => {
 
-        if(item.id !== id) {
+        if (item.id !== id) {
+          return item;
+        }
+
+        const newQuantity = (item.quantity ?? 0) + change;
+
+        if (newQuantity <= 0) {
           return item;
         }
 
         return {
           ...item,
-          quantity: Math.max(
-            0,
-            (item.quantity ?? 0) + change
-          )
+          quantity: newQuantity
         };
       });
+
+      this.saveItems(updatedItems);
+      return updatedItems;
+    });
+  }
+
+  updateItem(updated: PantryItem) {
+    this.pantryItems.update(items => {
+
+      const updatedItems = items.map(item =>
+        item.id === updated.id ? updated : item
+      );
 
       this.saveItems(updatedItems);
       return updatedItems;
@@ -78,7 +92,7 @@ export class PantryService {
     restockDate: Date
   ): Date | undefined {
 
-    if(!food.averageShelfLifeDays) {
+    if (!food.averageShelfLifeDays) {
       return undefined;
     }
 
@@ -97,7 +111,7 @@ export class PantryService {
       this.storageKey
     );
 
-    if(!data) {
+    if (!data) {
       return [];
     }
 
@@ -121,6 +135,58 @@ export class PantryService {
       this.storageKey,
       JSON.stringify(items)
     );
+  }
 
+  sortByExpiry(items: PantryItem[]): PantryItem[] {
+    const priority = (status: ExpiryStatus) => {
+      switch (status) {
+        case 'expired': return 0;
+        case 'critical': return 1;
+        case 'warning': return 2;
+        default: return 3;
+      }
+    };
+
+    return [...items].sort((a, b) => {
+      const aInfo = this.getExpiryInfo(a);
+      const bInfo = this.getExpiryInfo(b);
+
+      return priority(aInfo.status) - priority(bInfo.status);
+    });
+  }
+
+  getExpiryInfo(item: PantryItem): {
+    days: number | null;
+    status: ExpiryStatus;
+  } {
+    if (!item.expiryDate) {
+      return { days: null, status: 'ok' };
+    }
+
+    const today = new Date();
+    const expiry = new Date(item.expiryDate);
+
+    const days = Math.ceil(
+      (expiry.getTime() - today.getTime()) / (1000 * 60 * 60 * 24)
+    );
+
+    let status: ExpiryStatus;
+
+    if (days < 0) status = 'expired';
+    else if (days <= 3) status = 'critical';
+    else if (days <= 7) status = 'warning';
+    else status = 'ok';
+
+    return { days, status };
+  }
+
+  deleteItem(id: string) {
+    this.pantryItems.update(items => {
+
+      const updated = items.filter(i => i.id !== id);
+
+      this.saveItems(updated);
+      return updated;
+    });
   }
 }

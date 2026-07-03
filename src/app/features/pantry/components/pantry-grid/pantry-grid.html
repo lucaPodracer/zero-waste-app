@@ -1,1 +1,7 @@
-<p>pantry-grid works!</p>
+<div class="pantry-grid">
+
+    @for(item of filteredItems; track item.id) {
+    <app-pantry-card [item]="item"></app-pantry-card>
+    }
+
+</div>

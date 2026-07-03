@@ -1,29 +1,29 @@
-<div class="toolbar">
+<mat-toolbar class="toolbar">
 
-    <button (click)="openAddDialog()">
-        + Lebensmittel
+    <button mat-raised-button color="primary" (click)="openAddDialog()">
+        <mat-icon>add</mat-icon>
+        Lebensmittel
     </button>
 
-    <button (click)="viewMode = 'grid'" [class.active]="viewMode === 'grid'">
-        🔲
+    <span class="spacer"></span>
+
+    <button mat-icon-button (click)="viewMode = 'grid'" [class.active]="viewMode === 'grid'">
+        <mat-icon>grid_view</mat-icon>
     </button>
 
-    <button (click)="viewMode = 'list'" [class.active]="viewMode === 'list'">
-        ☰
+    <button mat-icon-button (click)="viewMode = 'list'" [class.active]="viewMode === 'list'">
+        <mat-icon>view_list</mat-icon>
     </button>
 
-</div>
+</mat-toolbar>
 
 
 @if(viewMode === 'grid') {
 
 <div class="pantry-grid">
 
-    @for(item of pantryItems(); track item.id) {
-
-    <app-pantry-card [item]="item">
-    </app-pantry-card>
-
+    @for(item of sortedPantryItems; track item.id) {
+    <app-pantry-card [item]="item"></app-pantry-card>
     }
 
 </div>
@@ -33,19 +33,6 @@
 
 @if(viewMode === 'list') {
 
-<div class="pantry-list">
-
-    @for(item of pantryItems(); track item.id) {
-
-    <p>
-        {{ item.food.name }}
-        -
-        {{ item.quantity }}
-        {{ item.unit }}
-    </p>
-
-    }
-
-</div>
+<app-pantry-list [items]="pantryItems()"></app-pantry-list>
 
 }

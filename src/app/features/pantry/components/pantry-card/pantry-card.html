@@ -4,50 +4,70 @@
         <img [src]="item.food.imageUrl || 'assets/images/food/placeholder.png'" [alt]="item.food.name">
     </div>
 
-
     <div class="pantry-content">
 
-        <h2>
-            {{ item.food.name }}
-        </h2>
-
+        <h2>{{ item.food.name }}</h2>
 
         <p>
             <strong>Kategorie:</strong>
             {{ item.food.category }}
         </p>
 
+        <div class="quantity-row">
 
-        <p>
-            <strong>Menge:</strong>
-            {{ item.quantity ?? '-' }}
-            {{ item.unit ?? '' }}
-        </p>
+            <p class="quantity">
+                <strong>Menge:</strong>
+                {{ item.quantity ?? '-' }} {{ item.unit ?? '' }}
+            </p>
 
-
-        @if(item.expiryDate) {
-
-        <p>
-            <strong>Ablauf:</strong>
-            {{ item.expiryDate | date }}
-        </p>
-
-        }
-
-
-        <div class="quantity-controls">
-
-            <button (click)="changeQuantity(-1)">
-            -
-            </button>
-
-            <button (click)="changeQuantity(1)">
-            +
-
-            </button>
+            <div class="quantity-controls">
+                <button (click)="changeQuantity(-1)" [disabled]="(item.quantity ?? 0) <= 1">-</button>
+                <button (click)="changeQuantity(1)">+</button>
+            </div>
 
         </div>
 
-    </div>
+        <div class="card-footer">
 
-</div>
+            <!-- LEFT: expiry info -->
+            <div class="expiry-info">
+
+                @if (item.expiryDate) {
+
+                @let info = pantryService.getExpiryInfo(item);
+
+                <div class="expiry" [ngClass]="info.status">
+
+                    <div class="date">
+                        {{ item.expiryDate | date:'dd.MM.yyyy' }}
+                    </div>
+
+                    <div class="days">
+
+                        @if (info.days !== null) {
+
+                        @if (info.days < 0) { seit {{ info.days * -1 }} Tagen abgelaufen } @else if (info.days===0) {
+                            läuft heute ab } @else { in {{ info.days }} Tagen } } </div>
+
+                    </div>
+
+                    }
+
+                </div>
+
+                <!-- RIGHT: actions -->
+                <div class="card-actions">
+
+                    <button mat-icon-button (click)="editItem()">
+                        <span class="material-symbols-outlined">edit</span>
+                    </button>
+
+                    <button mat-icon-button (click)="deleteItem()" class="danger">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>

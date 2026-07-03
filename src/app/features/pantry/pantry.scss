@@ -4,3 +4,18 @@
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 20px;
 }
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.spacer {
+    flex: 1;
+}
+
+button.active {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
